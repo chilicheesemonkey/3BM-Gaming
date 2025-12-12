@@ -150,6 +150,11 @@
     "title": "CraftMine"
   },
   {
+    "link": "projects/crazycars/index.html",
+    "imgSrc": "projects/crazycars/crazy-cars.avif",
+    "title": "Crazy cars"
+  },
+  {
     "link": "projects/creativekillchamber/index.html",
     "imgSrc": "projects/creativekillchamber/creativekillchamber.jpg",
     "title": "Creative Kill Chamber"
@@ -439,6 +444,11 @@
     "link": "projects/missiles/index.html",
     "imgSrc": "projects/missiles/miss.png",
     "title": "Missiles"
+  },
+  {
+    "link": "projects/monkeymart/index.html",
+    "imgSrc": "projects/monkeymart/monkey-mart-f180x180.png",
+    "title": "Monkey mart"
   },
   {
     "link": "projects/motox3m/index.html",
