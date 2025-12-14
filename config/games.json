@@ -30,6 +30,11 @@
     "title": "Adrenaline Challenge"
   },
   {
+    "link": "projects/angrybirdsspace/index.html",
+    "imgSrc": "projects/angrybirdsspace/abs.webp",
+    "title": "Angry birds space"
+  },
+  {
     "link": "projects/among-us/index.html",
     "imgSrc": "projects/among-us/red.png",
     "title": "Among Us"
@@ -43,6 +48,11 @@
     "link": "projects/backrooms/index.html",
     "imgSrc": "projects/backrooms/img/splash.jpg",
     "title": "Backrooms"
+  },
+  {
+    "link": "projects/badpiggiesindex.html",
+    "imgSrc": "projects/badpiggies/Bad_Piggies.png",
+    "title": "Bad piggies"
   },
   {
     "link": "projects/basketball-stars/index.html",
@@ -428,6 +438,16 @@
     "link": "projects/learntofly/index.html",
     "imgSrc": "projects/learntofly/learntofly.png",
     "title": "Learn To Fly"
+  },
+  {
+    "link": "projects/learntofly2/index.html",
+    "imgSrc": "projects/learntofly2/learn2fly.png",
+    "title": "Learn 2 Fly"
+  },
+  {
+    "link": "projects/learntofly3/index.html",
+    "imgSrc": "projects/learntofly3/learn-to-fly-3.png",
+    "title": "Learn To Fly 3"
   },
   {
     "link": "projects/mario/index.html",
