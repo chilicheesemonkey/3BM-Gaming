@@ -375,6 +375,11 @@
     "title": "Hacker Typer"
   },
   {
+    "link": "projects/happywheels/index.html",
+    "imgSrc": "projects/happywheels/happy-wheels.jpg",
+    "title": "Happy wheels"
+  },
+  {
     "link": "projects/hba/index.html",
     "imgSrc": "projects/hba/hoverbotarena.jpg",
     "title": "Hover Bot Arena"
@@ -569,6 +574,11 @@
     "link": "projects/polybranch/index.html",
     "imgSrc": "projects/polybranch/img/pic1.png",
     "title": "PolyBranch"
+  },
+  {
+    "link": "projects/polytrack/index.html",
+    "imgSrc": "projects/polytrack/PolyTrack.png",
+    "title": "Poly Track"
   },
   {
     "link": "projects/portalflash/index.html",
