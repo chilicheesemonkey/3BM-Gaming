@@ -71,7 +71,7 @@
   },
    {
     "link": "projects/bitlife/index.html",
-    "imgSrc": "projects/bitlife/.png",
+    "imgSrc": "projects/bitlife/bitlife.png",
     "title": "Bitlife"
   },
   {
@@ -431,7 +431,7 @@
   },
   {
     "link": "projects/clicypurplehead/index.html",
-    "imgSrc": "projects/clicypurplehead/iph.jpeg",
+    "imgSrc": "projects/clicypurplehead/iph.jpg",
     "title": "Icy purple head"
   },
   {
@@ -567,7 +567,7 @@
   },
   {
     "link": "projects/mrracer/index.html",
-    "imgSrc": "projects/mrracer/mrracer.pngT",
+    "imgSrc": "projects/mrracer/mrracer.png",
     "title": "Mr Racer"
   },
   {
