@@ -1,68 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://quekaihua.github.io/brick-game/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Classic Brick games created using create-react-app" />
+    <meta name="keywords" content="Brick games,breakout, Tetris,Snake,Game Boy,JavaScript,React" />
+    <link rel="apple-touch-icon" href="https://quekaihua.github.io/brick-game/logo.png" />
+    <link rel="manifest" href="https://quekaihua.github.io/brick-game/manifest.json" />
+    <title>Brick Game</title>
+</head>
+
 <body>
-
-  <div id="unity-container">
-    <canvas id="unity-canvas" tabindex="-1" width="1738" height="869" style="cursor: default;"></canvas>
-  </div>
-
-  <!-- Spinner и процент -->
-  <div id="loading-spinner" style="display: none;"></div>
-  <div id="loading-text" style="display: none;">100%</div>
-
-  <!-- Поворот устройства -->
-  <div id="rotate-alert" style="display: none;">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="100" height="100">
-      <path d="M192 0H64C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H192c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zM128 480c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"></path>
-    </svg>
-    <div class="rotate-title">Rotate your device</div>
-    <div class="rotate-sub">For best viewing, please use portrait mode.</div>
-  </div>
-
-  <script>
-    function isMobile() {
-      return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    }
-
-    function checkOrientation() {
-      const alert = document.getElementById('rotate-alert');
-      if (isMobile()) {
-        const isLandscape = window.innerWidth > window.innerHeight;
-        alert.style.display = isLandscape ? 'flex' : 'none';
-      } else {
-        alert.style.display = 'none';
-      }
-    }
-
-    window.addEventListener("load", checkOrientation);
-    window.addEventListener("resize", checkOrientation);
-    window.addEventListener("orientationchange", checkOrientation);
-  </script>
-
-  <script src="Build/BrickGame.loader.js"></script>
-  <script>
-    const canvas = document.querySelector("#unity-canvas");
-    const spinner = document.getElementById("loading-spinner");
-    const loadingText = document.getElementById("loading-text");
-
-    createUnityInstance(canvas, {
-      dataUrl: "Build/BrickGame.data.gz",
-      frameworkUrl: "Build/BrickGame.framework.js.gz",
-      codeUrl: "Build/BrickGame.wasm.gz",
-      streamingAssetsUrl: "StreamingAssets",
-      companyName: "Dialekts, LTD",
-      productName: "Brick Game",
-      productVersion: "1.1.0"
-    }, (progress) => {
-      const percent = Math.floor(progress * 100);
-      loadingText.textContent = `${percent}%`;
-      if (progress >= 1.0) {
-        spinner.style.display = "none";
-        loadingText.style.display = "none";
-      }
-    }).catch((error) => {
-      console.error("Unity instance loading failed", error);
-    });
-  </script><script src="Build/BrickGame.framework.js.gz"></script><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe>
-
-
-
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
 </body>
+
+</html>
