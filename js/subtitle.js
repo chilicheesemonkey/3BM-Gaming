@@ -73,8 +73,9 @@ function getRandomGreeting() {
     "Toss the Turtle is pretty fun",
     "i put coins in my special place",
     "The skeleton with the sword. HE FOUND YOU!",
-    "I spent too much time making  var randomIndex = Math.floor(Math.random() * greetings.length);
-];
+    "I spent too much time making these",
+   ];
+    var randomIndex = Math.floor(Math.random() * greetings.length);
     return greetings[randomIndex];
 }
 
