@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graggle Simulator</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+
+        /* The image is hidden by default */
+        #graggle-img {
+            display: none; 
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* UI Styling */
+        #ui-overlay {
+            position: absolute;
+            z-index: 10;
+            text-align: center;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+            background-color: #ffed00;
+            border: 4px solid #000;
+            font-weight: bold;
+            box-shadow: 5px 5px 0px #555;
+        }
+
+        button:hover {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="ui-overlay">
+        <button onclick="goFullscreen()">BECOME ONE WITH GRAGGLE.</button>
+    </div>
+
+    <img id="graggle-img" src="https://static.wikia.nocookie.net/simpsonsfanon/images/e/ed/Graggle.png" alt="Graggle">
+
+    <script>
+        const graggle = document.getElementById('graggle-img');
+        const ui = document.getElementById('ui-overlay');
+
+        function goFullscreen() {
+            const elem = document.documentElement;
+
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            }
+        }
+
+        // Logic to show/hide based on fullscreen state
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement) {
+                // If in fullscreen: Show Graggle, Hide Button
+                graggle.style.display = 'block';
+                ui.style.display = 'none';
+            } else {
+                // If exiting fullscreen: Hide Graggle, Show Button
+                graggle.style.display = 'none';
+                ui.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
