@@ -536,6 +536,11 @@
     "title": "Mario"
   },
   {
+    "link": "projects/mariokart64/index.html",
+    "imgSrc": "projects/mariokart64/Screenshot 2026-01-19 181509.png",
+    "title": "Mario kart 64"
+  },
+  {
     "link": "projects/madalinstuntcars/index.html",
     "imgSrc": "projects/madalinstuntcars/msc.png",
     "title": "Madalin stunt cars 2"
