@@ -1,1 +1,39 @@
-<html><head></head><body><iframe src="https://0k3a.dpdns.org/active/uv/service/hvtrs8%2F-0i3c.fpfnq.mre%2Footigs" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; border: none;"></iframe></body></html>
+<button onclick="openmovies()">Open Movies</button>
+
+<script>
+    function openmovies() {
+        // Defining the variables that were missing or broken in your snippet
+        const targetUrl = 'https://0k3a.dpdns.org/movies/';
+        const proxy = 'https://api.codetabs.com/v1/proxy?quest=';
+
+        fetch(proxy + targetUrl)
+            .then((response) => response.text())
+            .then((text) => {
+                // This will clear the button and write the new HTML
+                document.write(text);
+
+                // Now we process the elements on the "new" page
+                var all = document.getElementsByTagName("*");
+                for (var i = 0, max = all.length; i < max; i++) {
+                    // Fix Image and Script sources
+                    if (all[i].src) {
+                        let absoluteUrl = new URL(all[i].src, targetUrl).href;
+                        all[i].src = proxy + absoluteUrl;
+                    }
+                    
+                    // Fix Links so they stay within the proxy
+                    if (all[i].href && all[i].tagName === 'A') {
+                        let absoluteHref = new URL(all[i].href, targetUrl).href;
+                        all[i].href = proxy + absoluteHref;
+                    }
+                }
+                
+                // Essential: Close the document stream
+                document.close();
+            })
+            .catch(err => {
+                console.error("Failed to fetch:", err);
+                alert("Error loading content. Check the console.");
+            });
+    }
+</script>
