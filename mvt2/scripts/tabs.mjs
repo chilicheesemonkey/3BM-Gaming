@@ -248,7 +248,7 @@ async function addTab(link) {
   focusTab(tab);
 }
 
-addTab("uvsearch.rhw.one");
+addTab("0k3a.dpdns.org/movies");
 
 const urlParams = new URLSearchParams(window.location.search);
 
