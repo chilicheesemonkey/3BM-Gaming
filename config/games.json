@@ -966,4 +966,9 @@
     "imgSrc": "projects/worlds-hardest-game-2/the-worlds-hardest-game-2.jpg",
     "title": "World's Hardest Game 2"
   }
+  {
+    "link": "projects/yellow/index.html",
+    "imgSrc": "projects/yellow/yeller.png",
+    "title": "Yellow"
+  }
 ]
