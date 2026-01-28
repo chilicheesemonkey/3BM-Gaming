@@ -1,45 +1,185 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>YT | 0K3A</title></title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<!-- FONTS -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-	 rel="stylesheet">
-  <!-- Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QR0J225RDB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>NETLII | YouTube</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* BASE STYLES & BACKGROUND */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Nunito', sans-serif;
+            /* Using your uploaded geometric background */
+            background: url('netlii-bg.avif') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            color: #1a1a1a; /* Changed from blue to deep charcoal */
+        }
 
-  gtag('config', 'G-QR0J225RDB');
-</script>
+        /* TOP BRANDING (From Sketch) */
+        .header {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        /* MAIN APP PANEL (Glassmorphism) */
+        .app-panel {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 30px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            width: 90%;
+            max-width: 700px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* SEARCH AREA (Pill shapes from sketch) */
+        .search-area {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        input#url {
+            width: 70%;
+            height: 3rem;
+            border-radius: 50px;
+            border: 2px solid #000; /* Changed from blue to black */
+            padding: 0 25px;
+            font-size: 1rem;
+            outline: none;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .watch-btn {
+            background-color: #000; /* Changed from yellow to black */
+            color: #fff; /* Changed from blue to white */
+            border: 2px solid #000;
+            border-radius: 50px;
+            padding: 0 25px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .watch-btn:hover {
+            background-color: transparent;
+            color: #000;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 20px;
+            border: 2px solid #000;
+            display: none; /* Controlled by script.js */
+        }
+
+        /* BOTTOM DOCK (From Sketch) */
+        .bottom-nav {
+            position: absolute;
+            bottom: 30px;
+            display: flex;
+            gap: 40px;
+            background: rgba(0, 0, 0, 0.05);
+            padding: 15px 40px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.7rem;
+            font-weight: 800;
+            transition: 0.2s;
+        }
+
+        .nav-item:hover { transform: translateY(-5px); }
+
+        .circle {
+            width: 45px;
+            height: 45px;
+            border: 2px solid #000; /* Changed from blue to black */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            background: white;
+        }
+
+        @media screen and (max-width: 600px) {
+            .header h1 { font-size: 2rem; }
+            .bottom-nav { gap: 15px; padding: 10px 20px; }
+            iframe { height: 220px; }
+        }
+    </style>
 </head>
 
 <body>
-	<h1 class="center">YouTube Unblocked</h5>
-		<div class=center>
-			<h3>Insert YouTube Link:</h3>
-			<input id="url" type="text" placeholder="" required>
-      <button id="submit" class="submit-button">Watch</button>
-  </div>
-  <br>
-  <div id="instructions" class="center">
-    <hr style="width:25% !important">
+
+    <div class="header">
+        <h1>NETLII</h1>
     </div>
-	<div id="video-holder-holder">
-		<div id="video-holder" class="center" style="display:none;">
-			<hr>
-			<iframe id="video" src="https://www.youtube-nocookie.com/embed/09uBkh-xIrw?wmode=transparent&amp;iv_load_policy=3&amp;autoplay=0&amp;html5=1&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=0&amp;theme=light" frameborder="0" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
-		</div>
-	</div>
-  <hr class="space">
+
+    <div class="app-panel">
+        <h3 style="margin-top:0; letter-spacing: 1px;">YOUTUBE UNBLOCKED</h3>
+        <div class="search-area">
+            <input id="url" type="text" placeholder="Paste Video Link..." required>
+            <button id="submit" class="watch-btn">WATCH</button>
+        </div>
+
+        <div id="video-holder">
+            <iframe id="video" src="" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <a href="/projects.html" class="nav-item">
+            <div class="circle">🎮</div>
+            <span>GAMES</span>
+        </a>
+        <a href="/yt.html" class="nav-item">
+            <div class="circle">📱</div>
+            <span>YT</span>
+        </a>
+        <a href="/misc.html" class="nav-item">
+            <div class="circle">⚙️</div>
+            <span>SETTINGS</span>
+        </a>
+        <a href="/movietv/" class="nav-item">
+            <div class="circle">🎬</div>
+            <span>MOVIES</span>
+        </a>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
-	<script src="js/script.js"></script>
 </html>
