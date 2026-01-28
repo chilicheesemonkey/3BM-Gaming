@@ -1,148 +1,249 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <title>Projects | 0K3A</title>
-    <meta property="og:title" content="Welcome to 0K3A, an ikea themed game site." />
-    <meta property="og:site_name" content="3kh0.github.io" />
-    <meta property="og:description" content="Welcome to 0K3A, an ikea themed game site." />
-    <meta name="description" content="Welcome to 0K3A, an ikea themed game site." />
-    <meta name="author" content="0K3A" />
+<head>
+    <title>NETLII | Games</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="shortcut-icon" href="/favicon.ico" />
-    <script src="/js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <style>
-      p {
-        text-align: center;
-        max-width: 600px;
-        margin: 20px auto;
-      }
-      button {
-        cursor: pointer;
-        background-color: #f7f00c;
-        border: none;
-        color: black;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 20px;
-        margin-top: 20px;
-      }
-      .game-link {
-        height: 400px;
-        width: 300px;
-        text-decoration: none;
-      }
-      .game-tile {
-        background-color: #f7f00c;
-        height: 400px;
-        width: 300px;
-        border-radius: 30px;
-      }
-      .game-icon {
-        border-radius: 30px;
-        width: 300px;
-        height: 300px;
-      }
-      .game-title {
-        font-size: 30px;
-        font-weight: bold;
-        color: #000000;
-        text-align: center;
-        margin: auto;
-      }
-      .flex-container {
-        display: flex;
-        flex-direction: row;
-        order: 0;
-        flex-grow: 0;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-      }
-      .container {
-        padding: 10px;
-      }
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
+        /* BASE STYLES & BACKGROUND */
+        /* UPDATED GLOBAL BACKGROUND STYLE */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    /* This sets your uploaded image as the fixed background for every page */
+    background: url('netlii-bg.avif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000; /* Monochrome text to match the new background */
+}
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Nunito', sans-serif;
+            background: url('netlii-bg.avif') no-repeat center center fixed;
+            background-size: cover;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        100% {
-          transform: rotate(360deg);
+
+        /* TOP BRANDING (Matching Sketch) */
+        .header {
+            margin-top: 40px;
+            text-align: center;
         }
-      }
+
+        .header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        /* SEARCH BAR (Pill Shape from Sketch) */
+        .search-container {
+            width: 90%;
+            max-width: 600px;
+            margin: 30px 0;
+        }
+
+        input#search {
+            width: 100%;
+            height: 3.5rem;
+            border-radius: 50px;
+            border: 2px solid #000;
+            padding: 0 30px;
+            font-size: 1.1rem;
+            outline: none;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-sizing: border-box;
+        }
+
+        /* GAME GRID */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .game-link {
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .game-link:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Modern Tile Design */
+        .game-tile {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            width: 260px;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .game-icon {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .game-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #000;
+            text-align: center;
+            padding: 20px 10px;
+            margin: 0;
+        }
+
+        /* BOTTOM DOCK (From Sketch) */
+        .bottom-nav {
+            margin-top: auto;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 40px;
+            background: rgba(0, 0, 0, 0.05);
+            padding: 15px 40px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.7rem;
+            font-weight: 800;
+            transition: 0.2s;
+        }
+
+        .nav-item:hover { transform: translateY(-5px); }
+
+        .circle {
+            width: 45px;
+            height: 45px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            background: white;
+        }
+
+        /* Loader */
+        #loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #000;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 0.8s linear infinite;
+            margin: 50px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media screen and (max-width: 600px) {
+            .header h1 { font-size: 2rem; }
+            .bottom-nav { gap: 15px; padding: 10px 20px; }
+        }
     </style>
-  </head>
-  <body style="background-color: #345beb; color: #f7f00c; font-family: sans-serif; text-decoration: none; text-align: center;">
-    <h1 style="font-size: 3em; text-align: center;">Products</h1>
-    <input type="text" id="search" onkeyup="searchGames()" placeholder="Search for stuff..." style="width: 100%; font-size: 18px; padding: 6px 20px; margin: auto; border-radius: 30px; max-width: 600px; margin-bottom: 10px;" />
-    <div id="loader" style="display: block; border: 16px solid #111111; border-top: 16px solid #3498db; border-radius: 50%; width: 120px; height: 120px; animation: spin 0.3s linear infinite; margin: auto; margin-top: 1rem;"></div>
+</head>
+<body>
+
+    <div class="header">
+        <h1>NETLII</h1>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" onkeyup="searchGames()" placeholder="Search Games..." />
+    </div>
+
+    <div id="loader"></div>
     <div id="game-container" class="flex-container"></div>
-    <p class="text-center">
-      <a href="/index.html" style="text-decoration: none;">
-        <button style="cursor: pointer; background-color: #f7f00c; border: none; color: black; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 20px; margin-top: 5px;">
-          Go to the homepage
-        </button>
-      </a>
-    </p>
-    <button id="back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px;">Back to top</button>
+
+    <div class="bottom-nav">
+        <a href="/projects.html" class="nav-item">
+            <div class="circle">🕹️</div>
+            <span>GAMES</span>
+        </a>
+        <a href="/yt.html" class="nav-item">
+            <div class="circle">📱</div>
+            <span>YT</span>
+        </a>
+        <a href="/misc.html" class="nav-item">
+            <div class="circle">⚙️</div>
+            <span>SETTINGS</span>
+        </a>
+        <a href="/movietv/" class="nav-item">
+            <div class="circle">🎬</div>
+            <span>MOVIES</span>
+        </a>
+    </div>
+
     <script>
       let games = [];
       fetch("config/games.json")
       .then((response) => response.json())
       .then((data) => {
         games = data;
+        renderGames(data);
+        document.getElementById("loader").style.display = "none";
+      })
+      .catch((error) => {
+          console.error("Error:", error);
+          document.getElementById("loader").style.display = "none";
+      });
+
+      function renderGames(data) {
         const container = document.getElementById("game-container");
+        container.innerHTML = "";
         data.forEach((project) => {
           const game = document.createElement("a");
           game.href = project.link;
-            game.className = "game-link container";
-            game.innerHTML = `
+          game.className = "game-link";
+          game.innerHTML = `
             <div class="game-tile">
-              <img class="game-icon" src="${project.imgSrc}" alt="icon" />
+              <img class="game-icon" src="${project.imgSrc}" alt="icon" loading="lazy" />
               <p class="game-title">${project.title}</p>
-              </div>`;
-              container.appendChild(game);
-          });
-          document.getElementById("loader").style.display = "none";
-        })
-        .catch((error) => console.error("Error:", error));
+            </div>`;
+          container.appendChild(game);
+        });
+      }
 
       function searchGames() {
         const input = document.getElementById("search");
         const filter = input.value.toUpperCase();
-        const container = document.getElementById("game-container");
-        container.innerHTML = "";
-        games
-          .filter((game) => game.title.toUpperCase().includes(filter))
-          .forEach((project) => {
-            const game = document.createElement("a");
-            game.href = project.link;
-            game.className = "game-link container";
-            game.innerHTML = `
-            <div class="game-tile">
-              <img class="game-icon" src="${project.imgSrc}" alt="icon" loading="lazy" />
-              <p class="game-title">${project.title}</p>
-              </div>`;
-            container.appendChild(game);
-          });
-        }
-        const backToTopButton = document.getElementById('back-to-top');
-        window.onscroll = function () {
-          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            backToTopButton.style.display = "block";
-          } else {
-          backToTopButton.style.display = "none";
-        }
-      };
-
-      backToTopButton.onclick = function () {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      };
+        const filtered = games.filter((game) => game.title.toUpperCase().includes(filter));
+        renderGames(filtered);
+      }
     </script>
-  </body>
+</body>
 </html>
