@@ -1,6 +1,6 @@
 # NETLII
 Welcome to Netlii, my flagship gaming website.
-<img width="1164" height="598" alt="Screenshot 2026-03-01 090507" src="https://github.com/user-attachments/assets/98a15229-298e-42fb-a8da-a3dcb5788bbe"/>
+<img width="1365" height="596" alt="Screenshot 2026-05-03 174111" src="https://github.com/user-attachments/assets/9823d68d-d03b-45ec-89c6-443be2e530a2" />
 ## Why use it?
 - games
 - movies (glitchy)
