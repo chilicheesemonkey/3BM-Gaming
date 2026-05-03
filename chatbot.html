@@ -30,28 +30,50 @@
         * { box-sizing: border-box; }
         body, html { margin: 0; padding: 0; width: 100vw; height: 100vh; font-family: 'Nunito', sans-serif; background: var(--body-bg) var(--bg-image) center/cover fixed; color: var(--text-color); display: flex; overflow: hidden; transition: 0.4s; }
 
-        /* Sidebar Styles */
-        .sidebar { width: 300px; background: var(--sidebar-bg); backdrop-filter: blur(30px); border-right: 1px solid var(--glass-border); display: flex; flex-direction: column; padding: 25px; transition: transform 0.3s ease; z-index: 100; position: relative; }
+        /* Sidebar & History Scrollbar */
+        .sidebar { width: 300px; background: var(--sidebar-bg); backdrop-filter: blur(30px); border-right: 1px solid var(--glass-border); display: flex; flex-direction: column; padding: 25px; transition: margin-left 0.3s ease; z-index: 100; flex-shrink: 0; }
         .sidebar.collapsed { margin-left: -300px; }
         
+        .chat-list { 
+            flex-grow: 1; 
+            overflow-y: auto; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 10px;
+            padding-right: 8px;
+        }
+
+        /* Custom Scrollbar Styles */
+        .chat-list::-webkit-scrollbar { width: 4px; }
+        .chat-list::-webkit-scrollbar-track { background: transparent; }
+        .chat-list::-webkit-scrollbar-thumb { background: var(--text-color); border-radius: 10px; opacity: 0.2; }
+
         .brand { font-size: 2.2rem; letter-spacing: 5px; font-weight: 900; margin-bottom: 30px; text-align: center; }
-        .new-chat { padding: 12px; border-radius: 15px; border: 2px solid var(--text-color); background: transparent; color: var(--text-color); font-weight: 900; cursor: pointer; margin-bottom: 20px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        
+        .sidebar-btn { padding: 12px; border-radius: 15px; border: 2px solid var(--text-color); background: transparent; color: var(--text-color); font-weight: 900; cursor: pointer; width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; transition: 0.2s; }
+        .new-chat { margin-bottom: 20px; }
         .new-chat:hover { background: var(--text-color); color: var(--body-bg); }
         
-        .chat-list { flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
-        .chat-item { padding: 12px; border-radius: 12px; background: rgba(255,255,255,0.05); font-size: 0.9rem; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border: 1px solid transparent; }
-        .chat-item:hover { border-color: var(--text-color); }
+        .clear-all { margin-top: 20px; border-color: #ff4747; color: #ff4747; font-size: 0.8rem; opacity: 0.7; }
+        .clear-all:hover { background: #ff4747; color: white; opacity: 1; }
 
-        .main { flex-grow: 1; height: 100vh; display: flex; flex-direction: column; position: relative; width: 100%; }
+        .chat-item { padding: 12px; border-radius: 12px; background: rgba(255,255,255,0.05); font-size: 0.9rem; cursor: pointer; border: 1px solid transparent; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 0; }
+        .chat-item:hover { border-color: var(--accent-blue); }
+
+        /* Main Stage */
+        .main { flex-grow: 1; height: 100vh; display: flex; flex-direction: column; position: relative; min-width: 0; }
         .nav { height: 70px; padding: 0 30px; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(15px); border-bottom: 1px solid var(--glass-border); }
         .stage { flex-grow: 1; padding: 40px 15%; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; }
 
-        .msg { max-width: 85%; padding: 20px; border-radius: 25px; line-height: 1.6; word-wrap: break-word; }
+        .msg { max-width: 85%; padding: 20px; border-radius: 25px; line-height: 1.6; word-wrap: break-word; white-space: pre-wrap; }
         .user-msg { align-self: flex-end; background: var(--accent-blue); color: white; border-bottom-right-radius: 4px; }
         .ai-msg { align-self: flex-start; background: var(--container-bg); border: 1px solid var(--glass-border); border-bottom-left-radius: 4px; }
         
-        .image-container { width: 100%; margin-top: 15px; border-radius: 15px; overflow: hidden; background: rgba(0,0,0,0.1); }
-        .image-container img { width: 100%; height: auto; display: block; }
+        pre { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 12px; overflow-x: auto; font-family: 'Courier New', monospace; margin: 10px 0; white-space: pre; }
+        
+        /* SPIN FIX */
+        .ri-spin { animation: spin 1s linear infinite; display: inline-block; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
         .footer { padding: 20px 15% 40px; }
         .input-wrap { background: var(--container-bg); backdrop-filter: blur(20px); border-radius: 40px; padding: 10px 25px; display: flex; align-items: center; border: 2px solid var(--text-color); }
@@ -69,17 +91,20 @@
 <body>
 
     <aside class="sidebar" id="sidebar">
-        <div class="brand"><span style="font-weight: 800">NETLII <span style="font-weight: 400; opacity: 0.5;">AI</span></div>
-        <button class="new-chat" id="newChatBtn"><i class="ri-add-line"></i> NEW SESSION</button>
+        <div class="brand">NETLII <span style="font-weight: 400; opacity: 0.5;">AI</span></div>
+        <button class="sidebar-btn new-chat" onclick="startNewChat()"><i class="ri-add-line"></i> NEW SESSION</button>
+        
         <div class="chat-list" id="history"></div>
+
+        <button class="sidebar-btn clear-all" onclick="clearAllChats()"><i class="ri-delete-bin-line"></i> CLEAR ALL</button>
     </aside>
 
     <main class="main">
         <header class="nav">
             <div style="display:flex; align-items:center; gap:20px;">
-                <button id="toggleBtn" style="background:none; border:none; color:var(--text-color); font-size:1.5rem; cursor:pointer;"><i class="ri-menu-fold-line"></i></button>
-                <select id="modelSelect" style="padding:8px 15px; border-radius:20px; background:var(--container-bg); color:var(--text-color); border:1px solid var(--text-color); font-weight:900;">
-                    <option value="polly">Polly (beta)</option>
+                <button onclick="toggleSidebar()" style="background:none; border:none; color:var(--text-color); font-size:1.5rem; cursor:pointer;"><i class="ri-menu-fold-line"></i></button>
+                <select id="model" style="padding:8px 15px; border-radius:20px; background:var(--container-bg); color:var(--text-color); border:1px solid var(--text-color); font-weight:900;">
+                     <option value="polly">Polly (beta)</option>
                     <option value="openai">GPT-4 Omni</option>
                     <option value="gemini-fast">Gemini</option>
                     <option value="qwen-coder">Qwen Coder</option>
@@ -87,139 +112,140 @@
                     <option value="mistral">Mistral</option>
                 </select>
             </div>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
         </header>
 
         <div class="stage" id="stage">
-            <div class="msg ai-msg">
-                <strong>Welcome.</strong><br>
+        <strong>Welcome.</strong><br>
                 Use the menu icon to toggle the sidebar and "New Session" to clear the stage.<br>
                 /image *prompt* to generate images<br>
-                <u>dont use this too much it will break for everyone</u><br>
-                if it breaks then shame on whoever broke it<br>
                 <strong>I'm Ready when you are.</strong>
-            </div>
         </div>
 
         <footer class="footer">
             <div class="input-wrap">
-                <input type="text" id="userInput" placeholder="Ask anything or /image..." autocomplete="off">
-                <button class="btn-send" id="sendBtn"><i class="ri-send-plane-fill"></i></button>
+                <input type="text" id="input" placeholder="Type a message..." autocomplete="off">
+                <button class="btn-send" onclick="send()"><i class="ri-send-plane-fill"></i></button>
             </div>
         </footer>
     </main>
 
     <script>
         const stage = document.getElementById('stage');
-        const input = document.getElementById('userInput');
+        const userInput = document.getElementById('input');
         const sidebar = document.getElementById('sidebar');
         const historyDiv = document.getElementById('history');
         
-        // --- API KEY ---
-        const API_KEY = "sk_TkHKcauHNG90SnfTJWJ1iNzIANHKaWf6"; 
+        const API_KEY = "sk_TkHKcauHNG90SnfTJWJ1iNzIANHKaWf6"; // Optional
 
-        let currentChatId = Date.now();
-        let allChats = JSON.parse(localStorage.getItem('netlii_pro_vault')) || {};
+        let chatId = Date.now();
+        let chats = JSON.parse(localStorage.getItem('netlii_pro_vault')) || {};
 
-        // Fix 1: Sidebar Toggle
-        document.getElementById('toggleBtn').onclick = () => {
-            sidebar.classList.toggle('collapsed');
-        };
+        function toggleSidebar() { sidebar.classList.toggle('collapsed'); }
 
-        // Fix 2: New Session
-        document.getElementById('newChatBtn').onclick = () => {
-            currentChatId = Date.now();
-            stage.innerHTML = '<div class="msg ai-msg">New session started.</div>';
-            updateHistoryList();
-        };
+        function formatContent(text) {
+            let escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            const codeRegex = /```([\s\S]*?)```/g;
+            return escaped.replace(codeRegex, (match, code) => {
+                return `<pre><code>${code.trim()}</code></pre>`;
+            });
+        }
 
-        async function handleSend() {
-            const val = input.value.trim();
+        async function send() {
+            const val = userInput.value.trim();
             if(!val) return;
-            renderMsg('user', val);
-            input.value = '';
+            addMsg('user', val);
+            userInput.value = '';
 
-            if(val.toLowerCase().startsWith('/image ')) {
-                const prompt = val.replace('/image ', '');
-                const url = `https://gen.pollinations.ai/image/${encodeURIComponent(prompt)}?width=1024&height=1024&nologo=true&seed=${Math.floor(Math.random()*1000000)}&key=${API_KEY}`;
-                renderMsg('ai', url, true);
-            } else {
-                const model = document.getElementById('modelSelect').value;
-                const typing = showTypingIndicator();
-                try {
-                    const res = await fetch(`https://gen.pollinations.ai/text/${encodeURIComponent(val)}?model=${model}&key=${API_KEY}`);
-                    const text = await res.text();
-                    typing.remove();
-                    renderMsg('ai', text);
-                } catch(e) { 
-                    typing.remove(); 
-                    renderMsg('ai', 'Error: Connection failed.'); 
-                }
+            const m = document.getElementById('model').value;
+            const typing = showTyping();
+            try {
+                const res = await fetch(`https://gen.pollinations.ai/text/${encodeURIComponent(val)}?model=${m}&key=${API_KEY}`);
+                const text = await res.text();
+                typing.remove();
+                addMsg('ai', text);
+            } catch(e) { 
+                typing.remove(); 
+                addMsg('ai', 'Error: Connection failed.'); 
             }
         }
 
-        function renderMsg(role, content, isImg=false) {
+        function addMsg(role, content, isImg=false) {
             const div = document.createElement('div');
             div.className = `msg ${role}-msg`;
-            if(isImg) {
-                div.innerHTML = `<div class="image-container"><img src="${content}" onload="stage.scrollTop=stage.scrollHeight"></div>`;
-            } else {
-                div.innerText = content;
-            }
+            div.innerHTML = formatContent(content);
             stage.appendChild(div);
             stage.scrollTop = stage.scrollHeight;
 
-            if(!allChats[currentChatId]) allChats[currentChatId] = [];
-            allChats[currentChatId].push({role, content, isImg});
-            localStorage.setItem('netlii_pro_vault', JSON.stringify(allChats));
-            updateHistoryList();
+            if(!chats[chatId]) chats[chatId] = [];
+            chats[chatId].push({role, content, isImg});
+            localStorage.setItem('netlii_pro_vault', JSON.stringify(chats));
+            updateHistory();
         }
 
-        function showTypingIndicator() {
+        function showTyping() {
             const div = document.createElement('div');
             div.className = 'msg ai-msg';
-            div.innerHTML = '<i class="ri-loader-line ri-spin"></i> Thinking...';
+            div.innerHTML = '<i class="ri-loader-4-line ri-spin"></i> Processing...';
             stage.appendChild(div);
             stage.scrollTop = stage.scrollHeight;
             return div;
         }
 
-        function updateHistoryList() {
+        function updateHistory() {
             historyDiv.innerHTML = '';
-            Object.keys(allChats).sort((a,b)=>b-a).forEach(id => {
+            Object.keys(chats).sort((a,b)=>b-a).forEach(id => {
                 const item = document.createElement('div');
                 item.className = 'chat-item';
-                item.innerText = allChats[id][0]?.content.substring(0,25) || 'Empty Chat';
-                item.onclick = () => {
-                    currentChatId = id;
-                    stage.innerHTML = '';
-                    allChats[id].forEach(m => {
-                        const d = document.createElement('div');
-                        d.className = `msg ${m.role}-msg`;
-                        if(m.isImg) d.innerHTML = `<div class="image-container"><img src="${m.content}"></div>`;
-                        else d.innerText = m.content;
-                        stage.appendChild(d);
-                    });
-                    stage.scrollTop = stage.scrollHeight;
-                };
+                item.innerText = chats[id][0]?.content.substring(0,25) || 'New Chat';
+                item.onclick = () => loadChat(id);
                 historyDiv.appendChild(item);
             });
         }
 
-        document.getElementById('sendBtn').onclick = handleSend;
-        input.onkeypress = (e) => { if(e.key==='Enter') handleSend(); };
+        function clearAllChats() {
+            if(confirm("Wipe all chat history?")) {
+                chats = {};
+                localStorage.removeItem('netlii_pro_vault');
+                updateHistory();
+                startNewChat();
+            }
+        }
 
-        // Theme Setup
-        const themeToggle = document.getElementById('theme-toggle');
-        themeToggle.onchange = () => {
-            const mode = themeToggle.checked ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', mode);
-            localStorage.setItem('theme', mode);
+        function loadChat(id) {
+            chatId = id;
+            stage.innerHTML = '';
+            chats[id].forEach(m => {
+                const div = document.createElement('div');
+                div.className = `msg ${m.role}-msg`;
+                div.innerHTML = formatContent(m.content);
+                stage.appendChild(div);
+            });
+            stage.scrollTop = stage.scrollHeight;
+        }
+
+        function startNewChat() {
+            chatId = Date.now();
+            stage.innerHTML = '<div class="msg ai-msg">New session started.</div>';
+            updateHistory();
+        }
+
+        userInput.onkeypress = (e) => { if(e.key==='Enter') send(); };
+
+        const toggle = document.getElementById('theme-toggle');
+        toggle.onchange = () => {
+            const t = toggle.checked ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+            localStorage.setItem('theme', t);
         };
         if(localStorage.getItem('theme')==='dark') {
             document.documentElement.setAttribute('data-theme', 'dark');
-            themeToggle.checked = true;
+            toggle.checked = true;
         }
-        updateHistoryList();
+        updateHistory();
     </script>
 </body>
 </html>
