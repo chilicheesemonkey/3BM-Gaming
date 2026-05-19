@@ -1,8 +1,8 @@
 // =====================================================
 // CONFIGURATION - Gets from config.js
 // =====================================================
-const DEFAULT_WISP = window.SITE_CONFIG?.defaultWisp ?? "wss://wisp.mercurywork.shop/";
-const WISP_SERVERS = [{ name: "MercuryWorkshop", url: "wss://wisp.mercurywork.shop/" }];
+const DEFAULT_WISP = window.SITE_CONFIG?.defaultWisp ?? "wss://wisp.rhw.one/";
+const WISP_SERVERS = [{ name: "RHW", url: "wss://wisp.rhw.one/" }];
 
 // Initialize default proxy server if not set
 if (!localStorage.getItem("proxServer")) {
