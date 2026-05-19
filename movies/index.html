@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <base href="https://netlii-games.pages.dev/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETLII | Movies & TV</title>
@@ -537,9 +536,9 @@
         function updatePlayer(type, id, s = 1, e = 1) {
             // VidLink Path Structure: /type/id/season/episode
             if (type === 'tv') {
-                ifm.src = `https://vidrock.ru/tv/${id}/${s}/${e}`;
+                ifm.src = `/Nexus-Proxy/embed#https://iframe-thingy.pages.dev/https://vidrock.ru/tv/${id}/${s}/${e}`;
             } else {
-                ifm.src = `https://vidrock.ru/movie/${id}`;
+                ifm.src = `/Nexus-Proxy/embed#https://iframe-thingy.pages.dev/https://vidrock.ru/movie/${id}`;
             }
         }
 
