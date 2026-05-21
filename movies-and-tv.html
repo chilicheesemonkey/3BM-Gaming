@@ -250,20 +250,44 @@
             background: var(--body-bg);
             border-bottom: 2px solid var(--accent);
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             position: relative;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .player-title {
             color: var(--accent);
             font-weight: 900;
             font-size: 1.5rem;
+            max-width: 40%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .player-controls-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        .tv-controls {
+            display: none;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .server-controls {
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .close-btn {
-            position: absolute;
-            right: 20px;
             background: var(--accent);
             color: var(--body-bg);
             border: none;
@@ -274,6 +298,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-weight: bold;
         }
 
         .player-wrapper {
@@ -305,6 +330,18 @@
 
         #pagination button:disabled {
             opacity: 0.3;
+        }
+
+        select.filter-btn {
+            padding: 5px 15px;
+            height: auto;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        select.filter-btn option {
+            background: var(--body-bg);
+            color: var(--accent);
         }
     </style>
 </head>
@@ -345,10 +382,24 @@
     <div class="player-container" id="playerContainer">
         <div class="player-header">
             <div class="player-title" id="playerTitle">Loading...</div>
-            <div id="tv-controls" style="display: none; margin-left: 20px; gap: 10px; align-items: center;">
-                <select id="seasonSelect" class="filter-btn" style="padding: 5px 15px; height: auto;"></select>
-                <select id="episodeSelect" class="filter-btn" style="padding: 5px 15px; height: auto;"></select>
+
+            <div class="player-controls-wrapper">
+                <div id="tv-controls" class="tv-controls">
+                    <select id="seasonSelect" class="filter-btn"></select>
+                    <select id="episodeSelect" class="filter-btn"></select>
+                </div>
+
+                <div class="server-controls">
+                    <select id="serverSelect" class="filter-btn">
+                        <option value="vidrock">Server 1 (VidRock)</option>
+                        <option value="111movies">Server 2 (111movies)</option>
+                        <option value="cinezo">Server 3 (Cinezo)</option>
+                        <option value="vidcore">Server 4 (VidCore)</option>
+                        <option value="vidking">Server 5 (VidKing)</option>
+                    </select>
+                </div>
             </div>
+
             <button class="close-btn" id="closeBtn">X</button>
         </div>
         <div class="player-wrapper">
@@ -395,17 +446,26 @@
             pc = document.getElementById('playerContainer'),
             ifm = document.getElementById('playerIframe'),
             pt = document.getElementById('playerTitle'),
-            cb = document.getElementById('closeBtn');
+            cb = document.getElementById('closeBtn'),
+            srvSel = document.getElementById('serverSelect');
+
+        let currentType = 'movie';
+        let currentId = null;
 
         load();
 
-        fb.forEach(x => x.onclick = () => {
-            fb.forEach(y => y.classList.remove('active'));
-            x.classList.add('active');
-            f = x.dataset.filter;
-            p = 1;
-            load()
+        fb.forEach(x => {
+            if (x.tagName === 'BUTTON') {
+                x.onclick = () => {
+                    fb.forEach(y => y.classList.remove('active'));
+                    x.classList.add('active');
+                    f = x.dataset.filter;
+                    p = 1;
+                    load()
+                }
+            }
         });
+
         q.oninput = e => {
             clearTimeout(s);
             let v = e.target.value.trim();
@@ -420,6 +480,18 @@
             pc.classList.remove('show');
             ifm.src = '';
             t = null;
+        };
+
+        // Server switcher tracking trigger
+        srvSel.onchange = () => {
+            const sSel = document.getElementById('seasonSelect');
+            const eSel = document.getElementById('episodeSelect');
+            const season = sSel.value || 1;
+            const episode = eSel.value || 1;
+
+            if (currentId) {
+                updatePlayer(currentType, currentId, season, episode);
+            }
         };
 
         function load() {
@@ -504,8 +576,6 @@
             document.getElementById('pagination').appendChild(d)
         }
 
-        let currentTvId = null;
-
         function open(mv) {
             t = mv;
             pt.textContent = mv.title || mv.name;
@@ -513,33 +583,61 @@
 
             const tvControls = document.getElementById('tv-controls');
 
-            // PRIORITY FIX: Explicitly check for media_type or name
-            // Search results provide 'media_type', standard lists often don't
             let type = mv.media_type;
             if (!type) {
                 type = mv.name ? 'tv' : 'movie';
             }
 
+            currentType = type;
+            currentId = mv.id;
+
             if (type === 'tv') {
-                currentTvId = mv.id;
                 tvControls.style.display = 'flex';
                 setupTvSelectors(mv.id);
-                // Default to Season 1, Episode 1 for the initial load
                 updatePlayer('tv', mv.id, 1, 1);
             } else {
-                currentTvId = null;
                 tvControls.style.display = 'none';
                 updatePlayer('movie', mv.id);
             }
         }
 
-        // Function to update the Iframe URL using VidLink
+        // Modified function to update player based on Server Selection
         function updatePlayer(type, id, s = 1, e = 1) {
-            // VidLink Path Structure: /type/id/season/episode
-            if (type === 'tv') {
-                ifm.src = `https://vidrock.ru/tv/${id}/${s}/${e}`;
-            } else {
-                ifm.src = `https://vidrock.ru/movie/${id}`;
+            const selectedServer = srvSel.value;
+
+            if (selectedServer === 'vidcore') {
+                if (type === 'tv') {
+                    ifm.src = `https://vidcore.net/tv/${id}/${s}/${e}`;
+                } else {
+                    ifm.src = `https://vidcore.net/movie/${id}`;
+                }
+            }
+            else if (selectedServer === 'cinezo') {
+                if (type === 'tv') {
+                    ifm.src = `https://api.cinezo.net/tv/${id}/${s}/${e}`;
+                } else {
+                    ifm.src = `https://api.cinezo.net/movie/${id}`;
+                }
+            } else if (selectedServer === 'vidking') {
+                if (type === 'tv') {
+                    ifm.src = `https://vidking.net/embed/tv/${id}/${s}/${e}`;
+                } else {
+                    ifm.src = `https://vidking.net/embed/movie/${id}`;
+                }
+            } else if (selectedServer === '111movies') {
+                if (type === 'tv') {
+                    ifm.src = `https://111movies.net/tv/${id}&tmdb=1&s=${s}&e=${e}`;
+                } else {
+                    ifm.src = `https://111movies.net/movie/${id}&tmdb=1`;
+                }
+            }
+            else {
+                // Default VidRock Structures
+                if (type === 'tv') {
+                    ifm.src = `https://vidrock.ru/tv/${id}/${s}/${e}`;
+                } else {
+                    ifm.src = `https://vidrock.ru/movie/${id}`;
+                }
             }
         }
 
@@ -548,14 +646,12 @@
             const sSel = document.getElementById('seasonSelect');
             const eSel = document.getElementById('episodeSelect');
 
-            // Fetch full TV details to get number of seasons
             const res = await fetch(`${b}/tv/${id}?api_key=${k}`);
             const data = await res.json();
 
             sSel.innerHTML = '';
             data.seasons.forEach(s => {
-                if (s.season_number === 0) return; // Skip specials usually
-                let opt = new Object();
+                if (s.season_number === 0) return; // Skip specials
                 sSel.innerHTML += `<option value="${s.season_number}">Season ${s.season_number}</option>`;
             });
 
