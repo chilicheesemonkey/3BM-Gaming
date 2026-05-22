@@ -392,10 +392,10 @@
                 <div class="server-controls">
                     <select id="serverSelect" class="filter-btn">
                         <option value="vidrock">Server 1 (VidRock)</option>
-                        <option value="111movies">Server 2 (111movies)</option>
                         <option value="cinezo">Server 3 (Cinezo)</option>
-                        <option value="vidcore">Server 4 (VidCore)</option>
-                        <option value="vidking">Server 5 (VidKing)</option>
+                        <option value="vidfast">Server 4 (Vidfast)</option>
+                        <option value="videasy">Server 5 (Videasy)</option>
+                        <option value="111movies">Server 2 (111movies)</option>
                     </select>
                 </div>
             </div>
@@ -605,11 +605,11 @@
         function updatePlayer(type, id, s = 1, e = 1) {
             const selectedServer = srvSel.value;
 
-            if (selectedServer === 'vidcore') {
+            if (selectedServer === 'vidfast') {
                 if (type === 'tv') {
-                    ifm.src = `https://vidcore.net/tv/${id}/${s}/${e}`;
+                    ifm.src = `https://vidfast.pro/tv/${id}/${s}/${e}`;
                 } else {
-                    ifm.src = `https://vidcore.net/movie/${id}`;
+                    ifm.src = `https://vidfast.pro/movie/${id}`;
                 }
             }
             else if (selectedServer === 'cinezo') {
@@ -618,11 +618,11 @@
                 } else {
                     ifm.src = `https://api.cinezo.net/movie/${id}`;
                 }
-            } else if (selectedServer === 'vidking') {
+            } else if (selectedServer === 'videasy') {
                 if (type === 'tv') {
-                    ifm.src = `https://vidking.net/embed/tv/${id}/${s}/${e}`;
+                    ifm.src = `https://player.videasy.net/tv/${id}/${s}/${e}`;
                 } else {
-                    ifm.src = `https://vidking.net/embed/movie/${id}`;
+                    ifm.src = `https://player.videasy.net/movie/${id}`;
                 }
             } else if (selectedServer === '111movies') {
                 if (type === 'tv') {
