@@ -7,12 +7,8 @@ Welcome to Netlii, my flagship gaming website.
 - proxy
 - apps
 - AND ITS STATIC!!
-  
-## why me?
-- i am a beginner
-- please support the project (star, fork, make your own link)
 
-## other features
+## Other features
 - updated VERY frequently
   
 ## MYOL (make your own link)
@@ -20,12 +16,16 @@ Welcome to Netlii, my flagship gaming website.
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chilicheesemonkey/netlii-games)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/chilicheesemonkey/netlii-games)
 
+## Other Versions
+- https://github.com/Bubbergamesites/Netlii-mini is a smaller recreation powered by Nexus and the UGS files
+- https://github.com/bubbergamesites/graggle is the image version and singlefile html version
+
 ## Credits
 - 3kh0 lite for the games and alot of the framework
-- rhenryw for uv static v2 (thx bro :D )
+- rhenryw for uv static v2 and the wisp server
 - UGS (ultimate game stash) for A LOT of the games
 - Destroyed12121 for the static scramjet code (that i modded to be NEXUS)
 - Pete Zah for the movies site that i modded
 - gointerstellar/useinterstellar (where this whole idea started)
-- and finally Bubbergamesites/0K3A, my first game site
+- Bubbergamesites/0K3A, my first game site
 - Cloudflare Pages for letting me host ts
