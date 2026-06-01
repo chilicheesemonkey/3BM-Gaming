@@ -31,7 +31,7 @@
                 const conn = new window.BareMux.BareMuxConnection("./bareworker.js");
                 
                 // Standardize the WISP URL (Remove trailing slash for the transport)
-                let wispUrl = localStorage.getItem("proxServer") || "wss://wisp.mercurywork.shop";
+                let wispUrl = localStorage.getItem("proxServer") || "wss://wisp.mercurywork.shop/";
                 if (wispUrl.endsWith('/')) wispUrl = wispUrl.slice(0, -1);
                 
                 await conn.setTransport(
