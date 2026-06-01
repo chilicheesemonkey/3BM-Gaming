@@ -262,10 +262,10 @@
             </a>
         </div>
     </div>
-    <iframe style="border:1px #FFFFFF none" src="/Nexus-Proxy/index.html" title="iFrame" width="1px" height="1px" scrolling="no" frameborder="no" allow=""></iframe>
+    <iframe style="border:1px #FFFFFF none" src="/web/index.html" title="iFrame" width="1px" height="1px" scrolling="no" frameborder="no" allow=""></iframe>
 
    <script>
-       // Updated Search Logic for Nexus-proxy
+       // Updated Search Logic for web
 const homeSearch = document.getElementById('home-search');
 
 function search(query) {
@@ -278,10 +278,10 @@ function search(query) {
             url = 'https://' + url;
         }
         // Redirect to the Nexus embed page with the URL
-        window.location.href = `/Nexus-Proxy/#${url}`;
+        window.location.href = `/web/#${url}`;
     } else {
         // Redirect to the Nexus embed page with a Google search
-        window.location.href = `/Nexus-Proxy/#${searchEngine}${encodeURIComponent(query)}`;
+        window.location.href = `/web/#${searchEngine}${encodeURIComponent(query)}`;
     }
 }
 
