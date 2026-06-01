@@ -8,52 +8,35 @@
 
 <script>
     async function setupProxy() {
-        if (!('serviceWorker' in navigator)) {
-            console.error("Service Workers are not supported in this browser.");
-            return;
-        }
+    if (!('serviceWorker' in navigator)) return;
 
-        try {
-            // 1. Register the Service Worker
-            const reg = await navigator.serviceWorker.register('./sw.js', { scope: './' });
+    try {
+        const reg = await navigator.serviceWorker.register('./sw.js', { scope: './' });
+        await navigator.serviceWorker.ready;
+
+        if (window.BareMux) {
+            const conn = new window.BareMux.BareMuxConnection("./bareworker.js");
+            let wispUrl = localStorage.getItem("proxServer") || "wss://wisp.mercurywork.shop";
             
-            // 2. Ensure the SW is active and controlling the page
-            await navigator.serviceWorker.ready;
-            
-            // Force activation if there's a waiting worker
-            if (reg.waiting) {
-                reg.waiting.postMessage({ type: 'SKIP_WAITING' });
-            }
+            await conn.setTransport(
+                "https://cdn.jsdelivr.net/npm/@mercuryworkshop/epoxy-transport@2.1.28/dist/index.mjs", 
+                [{ wisp: wispUrl }]
+            );
 
-            // 3. Initialize BareMux Connection
-            if (window.BareMux) {
-                // Ensure the path to bareworker matches your file structure
-                const conn = new window.BareMux.BareMuxConnection("./bareworker.js");
-                
-                // Standardize the WISP URL (Remove trailing slash for the transport)
-                let wispUrl = localStorage.getItem("proxServer") || "wss://wisp.rhw.one";
-                if (wispUrl.endsWith('/')) wispUrl = wispUrl.slice(0, -1);
-                
-                await conn.setTransport(
-                    "https://cdn.jsdelivr.net/npm/@mercuryworkshop/epoxy-transport@2.1.28/dist/index.mjs", 
-                    [{ wisp: wispUrl }]
-                );
-
-                // 4. Send config to the SW
-                if (navigator.serviceWorker.controller) {
-                    navigator.serviceWorker.controller.postMessage({
-                        type: "config",
-                        wispurl: wispUrl,
-                        autoswitch: true
-                    });
-                }
-                
-                console.log("NETLII Proxy: Fully Initialized");
+            // Give the SW a tiny bit of time to initialize listeners
+            const controller = navigator.serviceWorker.controller || reg.active;
+            if (controller) {
+                controller.postMessage({
+                    type: "config",
+                    wispurl: wispUrl
+                });
             }
-        } catch (err) {
-            console.error("Proxy Setup Failed:", err);
+            console.log("NETLII Proxy: Initialized");
         }
+    } catch (err) {
+        console.error("Proxy Setup Failed:", err);
     }
+}
 
     // Run setup after the page loads to prevent blocking the UI
     window.addEventListener('load', setupProxy);
@@ -62,7 +45,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
-    <title>NETLII | Home</title>
+    <title>Netlii | Home</title>
     <style>
         :root {
             --text-color: #1a1a1a;
@@ -97,47 +80,6 @@
             color: var(--text-color);
         }
 
-        /* Theme Toggle Styling */
-        .theme-switch-wrapper {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            z-index: 100;
-        }
-
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 50px;
-            height: 24px;
-        }
-
-        .switch input { opacity: 0; width: 0; height: 0; }
-
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-color: #ccc;
-            transition: .4s;
-            border-radius: 34px;
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 18px; width: 18px;
-            left: 3px; bottom: 3px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-
-        input:checked + .slider { background-color: #2196F3; }
-        input:checked + .slider:before { transform: translateX(26px); }
 
         .mode-label {
             font-size: 0.8rem;
@@ -219,18 +161,6 @@
     </style>
 </head>
 <body>
-    <a href="/netlii-singlefile-final.html" download="Netlii.html">
-  <button type="button">Download Netlii</button>
-</a>
-
-    <div class="theme-switch-wrapper">
-        <span class="mode-label">Dark Mode</span>
-        <label class="switch">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider"></span>
-        </label>
-    </div>
-
     <div class="glass-panel">
         <h1>NETLII</h1>
         <input type="text" id="home-search" class="search-bar" placeholder="Search">
@@ -285,30 +215,6 @@ homeSearch.addEventListener('keypress', (e) => {
         }
     }
 });
-   </script>
-   <script>
-             // Theme Toggle Logic
-        const toggleSwitch = document.querySelector('#theme-toggle');
-        
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
    </script>
 </body>
 </html>
