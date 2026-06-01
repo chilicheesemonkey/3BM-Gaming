@@ -16,7 +16,7 @@
 
         if (window.BareMux) {
             const conn = new window.BareMux.BareMuxConnection("./bareworker.js");
-            let wispUrl = localStorage.getItem("proxServer") || "wss://wisp.mercurywork.shop";
+            let wispUrl = localStorage.getItem("proxServer") || "wss://wisp.mercurywork.shop/";
             
             await conn.setTransport(
                 "https://cdn.jsdelivr.net/npm/@mercuryworkshop/epoxy-transport@2.1.28/dist/index.mjs", 
