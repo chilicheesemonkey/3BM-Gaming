@@ -183,8 +183,7 @@ function switchToServer(url, latency = null) {
 
 // Proactively check server health and switch if needed
 async function proactiveServerCheck() {
-    if (!wispConfig.autoswitch || !wispConfig.servers || wispConfig.servers.length === 0) return;
-
+    if (!wispConfig.autoswitch || !wispConfig.servers || wispConfig.servers.length === 0) return;    
     const currentUrl = wispConfig.wispurl;
     
     // Ping all servers to get current health status
@@ -284,6 +283,7 @@ scramjet.addEventListener("request", async (e) => {
         delete e.requestHeaders['referer'];
         delete e.requestHeaders['origin'];
     }
+    
     e.response = (async () => {
         await configReadyPromise;
         
@@ -307,16 +307,31 @@ scramjet.addEventListener("request", async (e) => {
                     delete e.requestHeaders['origin'];
                 }
 
-                return await scramjet.client.fetch(e.url, {
+                // FIX: Changed redirect from 'manual' to 'follow' to prevent freezing on 3xx responses
+                const response = await scramjet.client.fetch(e.url, {
                     method: e.method,
                     body: e.body,
                     headers: e.requestHeaders,
                     credentials: "include",
                     mode: e.mode === "cors" ? e.mode : "same-origin",
                     cache: e.cache,
-                    redirect: "manual",
+                    redirect: "follow", 
                     duplex: "half",
                 });
+
+                // Extra safety: If a manual proxy layer still returns a redirect status, rewrite it
+                if (response.status >= 300 && response.status < 400) {
+                    const redirectUrl = response.headers.get('location');
+                    if (redirectUrl) {
+                        return Object.defineProperty(
+                            new Response('', { status: response.status, headers: response.headers }),
+                            'url',
+                            { value: redirectUrl }
+                        );
+                    }
+                }
+
+                return response;
             } catch (err) {
                 lastErr = err;
                 const errMsg = err.message.toLowerCase();
@@ -339,15 +354,11 @@ scramjet.addEventListener("request", async (e) => {
         if (wispConfig.autoswitch && wispConfig.servers && wispConfig.servers.length > 1) {
             const currentHealth = serverHealth.get(wispConfig.wispurl);
             
-            // Only switch if server has been unstable for a while
             if (currentHealth && currentHealth.consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
-                // Find a working server that isn't the current one
                 for (const server of wispConfig.servers) {
                     if (server.url === wispConfig.wispurl) continue;
                     const serverH = serverHealth.get(server.url);
-                    // Prefer servers with no failures or fewer failures
                     if (!serverH || serverH.consecutiveFailures < MAX_CONSECUTIVE_FAILURES) {
-                        // Ping to verify it's actually working
                         const pingResult = await pingServer(server.url);
                         if (pingResult.success) {
                             console.log(`SW: Auto-switching to ${server.url} due to failures on current server`);
