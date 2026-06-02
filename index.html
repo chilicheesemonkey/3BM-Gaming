@@ -39,7 +39,7 @@
                 
                 // FIX: Standardize the WISP URL by removing any trailing slashes 
                 // so it matches the service worker's inner string verification perfectly.
-                let wispUrl = localStorage.getItem("proxServer") || "wss://wisp.mercurywork.shop";
+                let wispUrl = localStorage.getItem("proxServer") || "wss://wisp.rhw.one";
                 if (wispUrl.endsWith('/')) {
                     wispUrl = wispUrl.slice(0, -1);
                 }
@@ -227,9 +227,6 @@
     </style>
 </head>
 <body>
-    <a href="/netlii-singlefile-final.html" download="Netlii.html">
-  <button type="button">Download Netlii</button>
-</a>
 
     <div class="theme-switch-wrapper">
         <span class="mode-label">Dark Mode</span>
