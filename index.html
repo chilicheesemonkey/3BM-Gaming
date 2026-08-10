@@ -2,46 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="module">
-    import * as BareMux from "https://cdn.jsdelivr.net/npm/@mercuryworkshop/bare-mux/dist/index.mjs";
-    window.BareMux = BareMux;
-</script>
-
-<script>
-    async function setupProxy() {
-    if (!('serviceWorker' in navigator)) return;
-
-    try {
-        const reg = await navigator.serviceWorker.register('./sw.js', { scope: './' });
-        await navigator.serviceWorker.ready;
-
-        if (window.BareMux) {
-            const conn = new window.BareMux.BareMuxConnection("./bareworker.js");
-            let wispUrl = localStorage.getItem("proxServer") || "wss://wisp.mercurywork.shop/";
-            
-            await conn.setTransport(
-                "https://cdn.jsdelivr.net/npm/@mercuryworkshop/epoxy-transport@2.1.28/dist/index.mjs", 
-                [{ wisp: wispUrl }]
-            );
-
-            // Give the SW a tiny bit of time to initialize listeners
-            const controller = navigator.serviceWorker.controller || reg.active;
-            if (controller) {
-                controller.postMessage({
-                    type: "config",
-                    wispurl: wispUrl
-                });
-            }
-            console.log("NETLII Proxy: Initialized");
-        }
-    } catch (err) {
-        console.error("Proxy Setup Failed:", err);
-    }
-}
-
-    // Run setup after the page loads to prevent blocking the UI
-    window.addEventListener('load', setupProxy);
-</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -229,7 +189,7 @@
                 <div class="icon-circle">🤖</div>
                 <span class="icon-label">Chat AI</span>
             </a>
-            <a href="./movies/" class="nav-item">
+            <a href="./web/#https://chimp.dpdns.org/movies-and-tv" class="nav-item">
                 <div class="icon-circle">🍿</div>
                 <span class="icon-label">Movies</span>
             </a>
