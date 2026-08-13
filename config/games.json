@@ -1,1096 +1,1096 @@
 [
    {
-    "link": "/projects/1/",
-    "imgSrc": "/projects/1/meta/apple-touch-icon.png",
+    "link": "./projects/1/",
+    "imgSrc": "./projects/1/meta/apple-touch-icon.png",
     "title": "1"
   },
   {
-    "link": "/projects/2048/",
-    "imgSrc": "/projects/2048/thumb.png",
+    "link": "./projects/2048/",
+    "imgSrc": "./projects/2048/thumb.png",
     "title": "2048"
   },
   {
-    "link": "/projects/400in1/",
-    "imgSrc": "/projects/400in1/sgb.png",
+    "link": "./projects/400in1/",
+    "imgSrc": "./projects/400in1/sgb.png",
     "title": "Sup Game Box (fc 400)"
   },
   {
-    "link": "/projects/9007199254740992/",
-    "imgSrc": "/projects/9007199254740992/logo-4.png",
+    "link": "./projects/9007199254740992/",
+    "imgSrc": "./projects/9007199254740992/logo-4.png",
     "title": "9007199254740992"
   },
   {
-    "link": "/projects/achievementunlocked/",
-    "imgSrc": "/projects/achievementunlocked/achievementunlocked.png",
+    "link": "./projects/achievementunlocked/",
+    "imgSrc": "./projects/achievementunlocked/achievementunlocked.png",
     "title": "Achievement Unlocked"
   },
   {
-    "link": "/projects/adrenalinechallenge/",
-    "imgSrc": "/projects/adrenalinechallenge/adrenalinechallenge.jpg",
+    "link": "./projects/adrenalinechallenge/",
+    "imgSrc": "./projects/adrenalinechallenge/adrenalinechallenge.jpg",
     "title": "Adrenaline Challenge"
   },
   {
-    "link": "/projects/agario/",
-    "imgSrc": "/projects/agario/agario.png",
+    "link": "./projects/agario/",
+    "imgSrc": "./projects/agario/agario.png",
     "title": "Agar.io"
   },
   {
-    "link": "/projects/angrybirdsspace/",
-    "imgSrc": "/projects/angrybirdsspace/Angry_Birds_promo_art.png",
+    "link": "./projects/angrybirdsspace/",
+    "imgSrc": "./projects/angrybirdsspace/Angry_Birds_promo_art.png",
     "title": "Angry birds"
   },
   {
-    "link": "/projects/among-us/",
-    "imgSrc": "/projects/among-us/red.png",
+    "link": "./projects/among-us/",
+    "imgSrc": "./projects/among-us/red.png",
     "title": "Among Us"
   },
   {
-    "link": "/projects/avalanche/",
-    "imgSrc": "/projects/avalanche/avalanche.png",
+    "link": "./projects/avalanche/",
+    "imgSrc": "./projects/avalanche/avalanche.png",
     "title": "Avalanche"
   },
   
   {
-    "link": "/projects/backrooms/",
-    "imgSrc": "/projects/backrooms/img/splash.jpg",
+    "link": "./projects/backrooms/",
+    "imgSrc": "./projects/backrooms/img/splash.jpg",
     "title": "Backrooms"
   },
   {
-    "link": "/projects/balatro/",
-    "imgSrc": "/projects/balatro/balatro.jpg",
+    "link": "./projects/balatro/",
+    "imgSrc": "./projects/balatro/balatro.jpg",
     "title": "Balatro"
   },
   {
-    "link": "/projects/badpiggies/",
-    "imgSrc": "/projects/badpiggies/Bad_Piggies.png",
+    "link": "./projects/badpiggies/",
+    "imgSrc": "./projects/badpiggies/Bad_Piggies.png",
     "title": "Bad piggies"
   },
   {
-    "link": "/projects/basketball-stars/",
-    "imgSrc": "/projects/basketball-stars/assets/images/basketball-stars.png",
+    "link": "./projects/basketball-stars/",
+    "imgSrc": "./projects/basketball-stars/assets/images/basketball-stars.png",
     "title": "Basketball Stars"
   },
     {
-    "link": "/projects/basketbros/",
-    "imgSrc": "/projects/basketbros/logo.png",
+    "link": "./projects/basketbros/",
+    "imgSrc": "./projects/basketbros/logo.png",
     "title": "Basket Bros"
   },
   {
-    "link": "/projects/battleforgondor/",
-    "imgSrc": "/projects/battleforgondor/3557.jpg",
+    "link": "./projects/battleforgondor/",
+    "imgSrc": "./projects/battleforgondor/3557.jpg",
     "title": "Battle for Gondor"
   },
    {
-    "link": "/projects/btts/",
-    "imgSrc": "/projects/btts/images.png",
+    "link": "./projects/btts/",
+    "imgSrc": "./projects/btts/images.png",
     "title": "Big Tower Tiny Square"
   },
    {
-    "link": "/projects/bitlife/",
-    "imgSrc": "/projects/bitlife/bitlife.png",
+    "link": "./projects/bitlife/",
+    "imgSrc": "./projects/bitlife/bitlife.png",
     "title": "Bitlife"
   },
   {
-    "link": "/projects/bigredbutton/",
-    "imgSrc": "/projects/bigredbutton/bigredbutton.png",
+    "link": "./projects/bigredbutton/",
+    "imgSrc": "./projects/bigredbutton/bigredbutton.png",
     "title": "Big Red Button"
   },
    {
-    "link": "/projects/bikeobby/",
-    "imgSrc": "/projects/bikeobby/unnamed.png",
+    "link": "./projects/bikeobby/",
+    "imgSrc": "./projects/bikeobby/unnamed.png",
     "title": "Bike obby"
   },
   {
-    "link": "/projects/blackknight/",
-    "imgSrc": "/projects/blackknight/blackknight.png",
+    "link": "./projects/blackknight/",
+    "imgSrc": "./projects/blackknight/blackknight.png",
     "title": "Black Knight"
   },
   {
-    "link": "/projects/bloonstd/",
-    "imgSrc": "/projects/bloonstd/bloonstd.jpg",
+    "link": "./projects/bloonstd/",
+    "imgSrc": "./projects/bloonstd/bloonstd.jpg",
     "title": "Bloons TD"
   },
   {
-    "link": "/projects/bloonstd2/",
-    "imgSrc": "/projects/bloonstd2/bloonstd2.png",
+    "link": "./projects/bloonstd2/",
+    "imgSrc": "./projects/bloonstd2/bloonstd2.png",
     "title": "Bloons TD 2"
   },
   {
-    "link": "/projects/blockblast/",
-    "imgSrc": "/projects/blockblast/blockblast.webp",
+    "link": "./projects/blockblast/",
+    "imgSrc": "./projects/blockblast/blockblast.webp",
     "title": "Block blast"
   },
   {
-    "link": "/projects/bloxors/",
-    "imgSrc": "/projects/bloxors/block.png",
+    "link": "./projects/bloxors/",
+    "imgSrc": "./projects/bloxors/block.png",
     "title": "Bloxors"
   },
    {
-    "link": "/projects/BR0WS3R/",
-    "imgSrc": "/projects/BR0WS3R/logo.png",
+    "link": "./projects/BR0WS3R/",
+    "imgSrc": "./projects/BR0WS3R/logo.png",
     "title": "BubberBrowser"
   },
   {
-    "link": "/projects/boxhead2play/",
-    "imgSrc": "/projects/boxhead2play/boxhead2play.jpg",
+    "link": "./projects/boxhead2play/",
+    "imgSrc": "./projects/boxhead2play/boxhead2play.jpg",
     "title": "Box Head"
   },
   {
-    "link": "/projects/breakingthebank/",
-    "imgSrc": "/projects/breakingthebank/breakingthebank.png",
+    "link": "./projects/breakingthebank/",
+    "imgSrc": "./projects/breakingthebank/breakingthebank.png",
     "title": "Breaking the Bank"
   },
  {
-    "link": "/projects/brick-game/",
-    "imgSrc": "/projects/brick-game/images/bg.png",
+    "link": "./projects/brick-game/",
+    "imgSrc": "./projects/brick-game/images/bg.png",
     "title": "Brick Game"
   },
    {
-    "link": "/projects/buckshotroulette/",
-    "imgSrc": "/projects/buckshotroulette/buckshotroulette.jpg",
+    "link": "./projects/buckshotroulette/",
+    "imgSrc": "./projects/buckshotroulette/buckshotroulette.jpg",
     "title": "Buckshot Roulette"
   },
   
   {
-    "link": "/projects/cbt/Coin Blitz Turbo.htm",
-    "imgSrc": "/projects/cbt/Screenshot 2025-12-23 190811.png",
+    "link": "./projects/cbt/Coin Blitz Turbo.htm",
+    "imgSrc": "./projects/cbt/Screenshot 2025-12-23 190811.png",
     "title": "Coin Blitz Turbo"
   },
   {
-    "link": "/projects/cannon-basketball-4/",
-    "imgSrc": "/projects/cannon-basketball-4/img/splash.png",
+    "link": "./projects/cannon-basketball-4/",
+    "imgSrc": "./projects/cannon-basketball-4/img/splash.png",
     "title": "Cannon Basketball 4"
   },
   {
-    "link": "/projects/canyondefense/",
-    "imgSrc": "/projects/canyondefense/canyondefense.png",
+    "link": "./projects/canyondefense/",
+    "imgSrc": "./projects/canyondefense/canyondefense.png",
     "title": "Canyon Defense"
   },
   {
-    "link": "/projects/cardrawing/",
-    "imgSrc": "/projects/cardrawing/splash.png",
+    "link": "./projects/cardrawing/",
+    "imgSrc": "./projects/cardrawing/splash.png",
     "title": "Car Drawing game"
   },
   {
-    "link": "/projects/catmario/",
-    "imgSrc": "/projects/catmario/catmario.jpg",
+    "link": "./projects/catmario/",
+    "imgSrc": "./projects/catmario/catmario.jpg",
     "title": "Cat mario game"
   },
   {
-    "link": "/projects/cell-machine/",
-    "imgSrc": "/projects/cell-machine/img/te9nDu.png",
+    "link": "./projects/cell-machine/",
+    "imgSrc": "./projects/cell-machine/img/te9nDu.png",
     "title": "Cell Machine"
   },
    {
-    "link": "/projects/celeste/",
-    "imgSrc": "/projects/celeste/images (1).jpg",
+    "link": "./projects/celeste/",
+    "imgSrc": "./projects/celeste/images (1).jpg",
     "title": "Celeste (Port)"
   },
   {
-    "link": "/projects/championarcher/",
-    "imgSrc": "/projects/championarcher/championarcher.png",
+    "link": "./projects/championarcher/",
+    "imgSrc": "./projects/championarcher/championarcher.png",
     "title": "Champion Archer"
   },
   {
-    "link": "/projects/chatbot/",
-    "imgSrc": "/projects/chatbot/IMG_3837.jpeg",
+    "link": "./projects/chatbot/",
+    "imgSrc": "./projects/chatbot/IMG_3837.jpeg",
     "title": "AI Chatbot (waves)"
   },
   {
-    "link": "/projects/chrome-dino/",
-    "imgSrc": "/projects/chrome-dino/icons/icon-256.png",
+    "link": "./projects/chrome-dino/",
+    "imgSrc": "./projects/chrome-dino/icons/icon-256.png",
     "title": "Chrome Dino"
   },
   {
-    "link": "/projects/circlo/",
-    "imgSrc": "/projects/circlo/img/download.png",
+    "link": "./projects/circlo/",
+    "imgSrc": "./projects/circlo/img/download.png",
     "title": "circlO"
   },
   {
-    "link": "/projects/clusterrush/",
-    "imgSrc": "/projects/clusterrush/clusterrush.png",
+    "link": "./projects/clusterrush/",
+    "imgSrc": "./projects/clusterrush/clusterrush.png",
     "title": "Cluster Rush"
   },
   {
-    "link": "/projects/connect3/",
-    "imgSrc": "/projects/connect3/connect3.png",
+    "link": "./projects/connect3/",
+    "imgSrc": "./projects/connect3/connect3.png",
     "title": "Connect 3"
   },
   {
-    "link": "/projects/cookie-clicker/",
-    "imgSrc": "/projects/cookie-clicker/cookie1.jpeg",
+    "link": "./projects/cookie-clicker/",
+    "imgSrc": "./projects/cookie-clicker/cookie1.jpeg",
     "title": "Cookie Clicker"
   },
   {
-    "link": "/projects/craftmine/",
-    "imgSrc": "/projects/craftmine/images/craftmine.png",
+    "link": "./projects/craftmine/",
+    "imgSrc": "./projects/craftmine/images/craftmine.png",
     "title": "CraftMine"
   },
   {
-    "link": "/projects/crazycars/",
-    "imgSrc": "/projects/crazycars/crazy-cars.avif",
+    "link": "./projects/crazycars/",
+    "imgSrc": "./projects/crazycars/crazy-cars.avif",
     "title": "Crazy cars"
   },
   {
-    "link": "/projects/crazycattle3d/",
-    "imgSrc": "/projects/crazycattle3d/cc3d.jpeg",
+    "link": "./projects/crazycattle3d/",
+    "imgSrc": "./projects/crazycattle3d/cc3d.jpeg",
     "title": "Crazy cattle 3d"
   },
   {
-    "link": "/projects/creativekillchamber/",
-    "imgSrc": "/projects/creativekillchamber/creativekillchamber.jpg",
+    "link": "./projects/creativekillchamber/",
+    "imgSrc": "./projects/creativekillchamber/creativekillchamber.jpg",
     "title": "Creative Kill Chamber"
   },
   {
-    "link": "/projects/csgo-clicker/",
-    "imgSrc": "/projects/csgo-clicker/images/vanguard.png",
+    "link": "./projects/csgo-clicker/",
+    "imgSrc": "./projects/csgo-clicker/images/vanguard.png",
     "title": "CS:GO Clicker"
   },
   {
-    "link": "/projects/ctr/",
-    "imgSrc": "/projects/ctr/logo.png",
+    "link": "./projects/ctr/",
+    "imgSrc": "./projects/ctr/logo.png",
     "title": "Cut the Rope"
   },
   {
-    "link": "/projects/ctr-holiday/",
-    "imgSrc": "/projects/ctr-holiday/Holiday_Gift.webp",
+    "link": "./projects/ctr-holiday/",
+    "imgSrc": "./projects/ctr-holiday/Holiday_Gift.webp",
     "title": "Cut the Rope Holiday"
   },
   {
-    "link": "/projects/ctr-tr/",
-    "imgSrc": "/projects/ctr-tr/logo.png",
+    "link": "./projects/ctr-tr/",
+    "imgSrc": "./projects/ctr-tr/logo.png",
     "title": "Cut the Rope Time Travel"
   },
   {
-    "link": "/projects/cubefield/",
-    "imgSrc": "/projects/cubefield/cubefield.jpg",
+    "link": "./projects/cubefield/",
+    "imgSrc": "./projects/cubefield/cubefield.jpg",
     "title": "Cubefield"
   },
   {
-    "link": "/projects/cupcake2048/",
-    "imgSrc": "/projects/cupcake2048/favicon.png",
+    "link": "./projects/cupcake2048/",
+    "imgSrc": "./projects/cupcake2048/favicon.png",
     "title": "Cupcake 2048"
   },
   {
-    "link": "/projects/deal-or-no-deal/",
-    "imgSrc": "/projects/deal-or-no-deal/index.jpg",
+    "link": "./projects/deal-or-no-deal/",
+    "imgSrc": "./projects/deal-or-no-deal/index.jpg",
     "title": "Deal or No Deal"
   },
   {
-    "link": "/projects/death-run-3d/",
-    "imgSrc": "/projects/death-run-3d/img/death.png",
+    "link": "./projects/death-run-3d/",
+    "imgSrc": "./projects/death-run-3d/img/death.png",
     "title": "Death Run 3D"
   },
   {
-    "link": "/projects/defend-the-tank/",
-    "imgSrc": "/projects/defend-the-tank/images/splash.jpg",
+    "link": "./projects/defend-the-tank/",
+    "imgSrc": "./projects/defend-the-tank/images/splash.jpg",
     "title": "Defend the Tank"
   },
   {
-    "link": "/projects/doge2048/",
-    "imgSrc": "/projects/doge2048/meta/apple-touch-icon.png",
+    "link": "./projects/doge2048/",
+    "imgSrc": "./projects/doge2048/meta/apple-touch-icon.png",
     "title": "Doge 2048"
   },
   {
-    "link": "/projects/DogeMiner/",
-    "imgSrc": "/projects/DogeMiner/img/dogeminer_300x300.png",
+    "link": "./projects/DogeMiner/",
+    "imgSrc": "./projects/DogeMiner/img/dogeminer_300x300.png",
     "title": "Doge Miner"
   },
   {
-    "link": "/projects/dk/cldonkeykongnes.html",
-    "imgSrc": "/projects/dk/images.png",
+    "link": "./projects/dk/cldonkeykongnes.html",
+    "imgSrc": "./projects/dk/images.png",
     "title": "Donkey kong (NES)"
   },
   {
-    "link": "/projects/doodle-jump/",
-    "imgSrc": "/projects/doodle-jump/doodle.png",
+    "link": "./projects/doodle-jump/",
+    "imgSrc": "./projects/doodle-jump/doodle.png",
     "title": "Doodle Jump"
   },
   {
-    "link": "/projects/doom/",
-    "imgSrc": "/projects/doom/Doom.jpg",
+    "link": "./projects/doom/",
+    "imgSrc": "./projects/doom/Doom.jpg",
     "title": "Doom (MS-Dos)"
   },
   {
-    "link": "/projects/doublewires/",
-    "imgSrc": "/projects/doublewires/doublewires.png",
+    "link": "./projects/doublewires/",
+    "imgSrc": "./projects/doublewires/doublewires.png",
     "title": "Double Wires"
   },
   {
-    "link": "/projects/draw-the-hill/",
-    "imgSrc": "/projects/draw-the-hill/icons/icon-512.png",
+    "link": "./projects/draw-the-hill/",
+    "imgSrc": "./projects/draw-the-hill/icons/icon-512.png",
     "title": "Draw the Hill"
   },
    {
-    "link": "/projects/drivemad/",
-    "imgSrc": "/projects/drivemad/drivemad.webp",
+    "link": "./projects/drivemad/",
+    "imgSrc": "./projects/drivemad/drivemad.webp",
     "title": "Drive Mad"
   },
   {
-    "link": "/projects/driftboss/",
-    "imgSrc": "/projects/driftboss/IMG_3805.jpeg",
+    "link": "./projects/driftboss/",
+    "imgSrc": "./projects/driftboss/IMG_3805.jpeg",
     "title": "Drift boss"
   },
   {
-    "link": "/projects/drifthunters/",
-    "imgSrc": "/projects/drifthunters/drifthunters.png",
+    "link": "./projects/drifthunters/",
+    "imgSrc": "./projects/drifthunters/drifthunters.png",
     "title": "Drift hunters"
   },
   {
-    "link": "/projects/ducklife1/",
-    "imgSrc": "/projects/ducklife1/ducklife.png",
+    "link": "./projects/ducklife1/",
+    "imgSrc": "./projects/ducklife1/ducklife.png",
     "title": "Duck Life"
   },
   {
-    "link": "/projects/ducklife2/",
-    "imgSrc": "/projects/ducklife2/ducklife2.png",
+    "link": "./projects/ducklife2/",
+    "imgSrc": "./projects/ducklife2/ducklife2.png",
     "title": "Duck Life 2"
   },
   {
-    "link": "/projects/ducklife3/",
-    "imgSrc": "/projects/ducklife3/duck.png",
+    "link": "./projects/ducklife3/",
+    "imgSrc": "./projects/ducklife3/duck.png",
     "title": "Duck Life 3"
   },
    {
-    "link": "/projects/ducklings/",
-    "imgSrc": "/projects/ducklings/ducky.png",
+    "link": "./projects/ducklings/",
+    "imgSrc": "./projects/ducklings/ducky.png",
     "title": "Ducklings io"
   },
   {
-    "link": "/projects/edgenotfound/",
-    "imgSrc": "/projects/edgenotfound/edge.png",
+    "link": "./projects/edgenotfound/",
+    "imgSrc": "./projects/edgenotfound/edge.png",
     "title": "Edge Not Found"
   },
   {
-    "link": "/projects/elasticman/",
-    "imgSrc": "/projects/elasticman/elasticman.jpg",
+    "link": "./projects/elasticman/",
+    "imgSrc": "./projects/elasticman/elasticman.jpg",
     "title": "Elastic Man"
   },
   {
-    "link": "/projects/endlesswar3/",
-    "imgSrc": "/projects/endlesswar3/endlesswar3.png",
+    "link": "./projects/endlesswar3/",
+    "imgSrc": "./projects/endlesswar3/endlesswar3.png",
     "title": "Endless War 3"
   },
    {
-    "link": "/projects/escaperoad/",
-    "imgSrc": "/projects/escaperoad/escape-road.png",
+    "link": "./projects/escaperoad/",
+    "imgSrc": "./projects/escaperoad/escape-road.png",
     "title": "Escape Road"
   },
   {
-    "link": "/projects/etc/",
-    "imgSrc": "/projects/etc/escapingtheprison.webp",
+    "link": "./projects/etc/",
+    "imgSrc": "./projects/etc/escapingtheprison.webp",
     "title": "Escaping the prison"
   },
   {
-    "link": "/projects/evil-glitch/",
-    "imgSrc": "/projects/evil-glitch/evil.png",
+    "link": "./projects/evil-glitch/",
+    "imgSrc": "./projects/evil-glitch/evil.png",
     "title": "Evil Glitch"
   },
   {
-    "link": "/projects/exo/",
-    "imgSrc": "/projects/exo/img/small.jpg",
+    "link": "./projects/exo/",
+    "imgSrc": "./projects/exo/img/small.jpg",
     "title": "Exo"
   },
   {
-    "link": "/projects/f1rgp/",
-    "imgSrc": "/projects/f1rgp/f1rgp.png",
+    "link": "./projects/f1rgp/",
+    "imgSrc": "./projects/f1rgp/f1rgp.png",
     "title": "F1 Random GP"
   },
   {
-    "link": "/projects/factoryballs/",
-    "imgSrc": "/projects/factoryballs/images/splash.png",
+    "link": "./projects/factoryballs/",
+    "imgSrc": "./projects/factoryballs/images/splash.png",
     "title": "Factory Balls Forever"
   },
  
   {
-    "link": "/projects/fake-virus/",
-    "imgSrc": "/projects/fake-virus/icon.png",
+    "link": "./projects/fake-virus/",
+    "imgSrc": "./projects/fake-virus/icon.png",
     "title": "Fake Virus"
   },
   {
-    "link": "/projects/flappy-2048/",
-    "imgSrc": "/projects/flappy-2048/meta/apple-touch-icon.png",
+    "link": "./projects/flappy-2048/",
+    "imgSrc": "./projects/flappy-2048/meta/apple-touch-icon.png",
     "title": "Flappy 2048"
   },
   {
-    "link": "/projects/ftc/",
-    "imgSrc": "/projects/ftc/ftc.webp",
+    "link": "./projects/ftc/",
+    "imgSrc": "./projects/ftc/ftc.webp",
     "title": "Fleeing the complex"
   },
   {
-    "link": "/projects/flappy-bird/",
-    "imgSrc": "/projects/flappy-bird/assets/thumb.png",
+    "link": "./projects/flappy-bird/",
+    "imgSrc": "./projects/flappy-bird/assets/thumb.png",
     "title": "Flappy Bird"
   },
   {
-    "link": "/projects/flashtetris/",
-    "imgSrc": "/projects/flashtetris/flashtetris.png",
+    "link": "./projects/flashtetris/",
+    "imgSrc": "./projects/flashtetris/flashtetris.png",
     "title": "Flash Tetris"
   },
    {
-    "link": "/projects/fortzone/",
-    "imgSrc": "/projects/fortzone/download (2).jpg",
+    "link": "./projects/fortzone/",
+    "imgSrc": "./projects/fortzone/download (2).jpg",
     "title": "Fortzone Battle Royale"
   },
   {
-    "link": "/projects/funnyshooter/",
-    "imgSrc": "/projects/funnyshooter/fs2.png",
+    "link": "./projects/funnyshooter/",
+    "imgSrc": "./projects/funnyshooter/fs2.png",
     "title": "Funny shooter 2"
   },
    {
-    "link": "/projects/gahingus/",
-    "imgSrc": "/projects/gahingus/gahingus.webp",
+    "link": "./projects/gahingus/",
+    "imgSrc": "./projects/gahingus/gahingus.webp",
     "title": "Gahingus im falling!! THE GAME"
   },
   {
-    "link": "/projects/game-inside/",
-    "imgSrc": "/projects/game-inside/img/display.jpg",
+    "link": "./projects/game-inside/",
+    "imgSrc": "./projects/game-inside/img/display.jpg",
     "title": "Game Inside a Game Inside a Game..."
   },
   {
-    "link": "/projects/geodash/",
-    "imgSrc": "/projects/geodash/image.png",
+    "link": "./projects/geodash/",
+    "imgSrc": "./projects/geodash/image.png",
     "title": "Geometry Dash (not Scratch)"
   },
   {
-    "link": "/projects/getaway-shootout/",
-    "imgSrc": "/projects/getaway-shootout/img/images.jpg",
+    "link": "./projects/getaway-shootout/",
+    "imgSrc": "./projects/getaway-shootout/img/images.jpg",
     "title": "Getaway Shootout"
   },
   {
-    "link": "/projects/gimme-the-airpod/",
-    "imgSrc": "/projects/gimme-the-airpod/img/logo.png",
+    "link": "./projects/gimme-the-airpod/",
+    "imgSrc": "./projects/gimme-the-airpod/img/logo.png",
     "title": "Gimme the Airpod"
   },
   {
-    "link": "/projects/glass-city/",
-    "imgSrc": "/projects/glass-city/image.png",
+    "link": "./projects/glass-city/",
+    "imgSrc": "./projects/glass-city/image.png",
     "title": "Glass City"
   },
    {
-    "link": "/projects/gdbaseball/",
-    "imgSrc": "/projects/gdbaseball/gdbaseball.jpg",
+    "link": "./projects/gdbaseball/",
+    "imgSrc": "./projects/gdbaseball/gdbaseball.jpg",
     "title": "Google Doodle Baseball"
   },
   {
-    "link": "/projects/google-snake/",
-    "imgSrc": "/projects/google-snake/img/snake.png",
+    "link": "./projects/google-snake/",
+    "imgSrc": "./projects/google-snake/img/snake.png",
     "title": "Google Snake"
   },
   {
-    "link": "/projects/grindcraft/",
-    "imgSrc": "/projects/grindcraft/img/splash.png",
+    "link": "./projects/grindcraft/",
+    "imgSrc": "./projects/grindcraft/img/splash.png",
     "title": "Grind Craft"
   },
    {
-    "link": "/projects/gunspin/",
-    "imgSrc": "/projects/gunspin/download (1).jpg",
+    "link": "./projects/gunspin/",
+    "imgSrc": "./projects/gunspin/download (1).jpg",
     "title": "Gunspin"
   },
   {
-    "link": "/projects/hackertype/",
-    "imgSrc": "/projects/hackertype/logo192.png",
+    "link": "./projects/hackertype/",
+    "imgSrc": "./projects/hackertype/logo192.png",
     "title": "Hacker Typer"
   },
   {
-    "link": "/projects/happywheels/",
-    "imgSrc": "/projects/happywheels/happy-wheels.jpg",
+    "link": "./projects/happywheels/",
+    "imgSrc": "./projects/happywheels/happy-wheels.jpg",
     "title": "Happy wheels"
   },
   {
-    "link": "/projects/hba/",
-    "imgSrc": "/projects/hba/hoverbotarena.jpg",
+    "link": "./projects/hba/",
+    "imgSrc": "./projects/hba/hoverbotarena.jpg",
     "title": "Hover Bot Arena"
   },
   {
-    "link": "/projects/helicopter/",
-    "imgSrc": "/projects/helicopter/helicopter.png",
+    "link": "./projects/helicopter/",
+    "imgSrc": "./projects/helicopter/helicopter.png",
     "title": "Helicopter"
   },
   {
-    "link": "/projects/hexempire/",
-    "imgSrc": "/projects/hexempire/hexempire.jpg",
+    "link": "./projects/hexempire/",
+    "imgSrc": "./projects/hexempire/hexempire.jpg",
     "title": "Hex Empire"
   },
   {
-    "link": "/projects/HexGL/",
-    "imgSrc": "/projects/HexGL/icon_256.png",
+    "link": "./projects/HexGL/",
+    "imgSrc": "./projects/HexGL/icon_256.png",
     "title": "HexGL"
   },
   {
-    "link": "/projects/hextris/",
-    "imgSrc": "/projects/hextris/images/hextris-logo.png",
+    "link": "./projects/hextris/",
+    "imgSrc": "./projects/hextris/images/hextris-logo.png",
     "title": "Hextris"
   },
    {
-    "link": "/projects/holeio/",
-    "imgSrc": "/projects/holeio/download.jpg",
+    "link": "./projects/holeio/",
+    "imgSrc": "./projects/holeio/download.jpg",
     "title": "Hole io"
   },
   {
-    "link": "/projects/clicypurplehead/",
-    "imgSrc": "/projects/clicypurplehead/iph.jpg",
+    "link": "./projects/clicypurplehead/",
+    "imgSrc": "./projects/clicypurplehead/iph.jpg",
     "title": "Icy purple head"
   },
   {
-    "link": "/projects/idle-breakout/",
-    "imgSrc": "/projects/idle-breakout/img/thumbnail.png",
+    "link": "./projects/idle-breakout/",
+    "imgSrc": "./projects/idle-breakout/img/thumbnail.png",
     "title": "Idle Breakout"
   },
   {
-    "link": "/projects/idle-shark/",
-    "imgSrc": "/projects/idle-shark/img/sharkgame.png",
+    "link": "./projects/idle-shark/",
+    "imgSrc": "./projects/idle-shark/img/sharkgame.png",
     "title": "Idle Shark"
   },
   {
-    "link": "/projects/impossiblequiz/",
-    "imgSrc": "/projects/impossiblequiz/impossiblequiz.png",
+    "link": "./projects/impossiblequiz/",
+    "imgSrc": "./projects/impossiblequiz/impossiblequiz.png",
     "title": "Impossible Quiz"
   },
    {
-    "link": "/projects/ifk/",
-    "imgSrc": "/projects/ifk/ifk.jpg",
+    "link": "./projects/ifk/",
+    "imgSrc": "./projects/ifk/ifk.jpg",
     "title": "INF3RK1T (infer kit)"
   },
   {
-    "link": "/projects/infiltratingtheairship/",
-    "imgSrc": "/projects/infiltratingtheairship/images.webp",
+    "link": "./projects/infiltratingtheairship/",
+    "imgSrc": "./projects/infiltratingtheairship/images.webp",
     "title": "Infiltrating the airship"
   },
   {
-    "link": "/projects/interactivebuddy/",
-    "imgSrc": "/projects/interactivebuddy/interactivebuddy.jpg",
+    "link": "./projects/interactivebuddy/",
+    "imgSrc": "./projects/interactivebuddy/interactivebuddy.jpg",
     "title": "Interactive Buddy"
   },
   {
-    "link": "/projects/just-one-boss/",
-    "imgSrc": "/projects/just-one-boss/pv1Gr5.png",
+    "link": "./projects/just-one-boss/",
+    "imgSrc": "./projects/just-one-boss/pv1Gr5.png",
     "title": "Just One Boss"
   },
    {
-    "link": "/projects/kartbros/",
-    "imgSrc": "/projects/kartbros/kart-bros.jpg",
+    "link": "./projects/kartbros/",
+    "imgSrc": "./projects/kartbros/kart-bros.jpg",
     "title": "Kart Bros"
   },
   {
-    "link": "/projects/kittencannon/",
-    "imgSrc": "/projects/kittencannon/kittencannon.png",
+    "link": "./projects/kittencannon/",
+    "imgSrc": "./projects/kittencannon/kittencannon.png",
     "title": "Kitten Cannon"
   },
   {
-    "link": "/projects/learntofly/",
-    "imgSrc": "/projects/learntofly/learntofly.png",
+    "link": "./projects/learntofly/",
+    "imgSrc": "./projects/learntofly/learntofly.png",
     "title": "Learn To Fly"
   },
   {
-    "link": "/projects/learntofly2/",
-    "imgSrc": "/projects/learntofly2/learn2fly.png",
+    "link": "./projects/learntofly2/",
+    "imgSrc": "./projects/learntofly2/learn2fly.png",
     "title": "Learn 2 Fly"
   },
   {
-    "link": "/projects/learntofly3/",
-    "imgSrc": "/projects/learntofly3/learn-to-fly-3.png",
+    "link": "./projects/learntofly3/",
+    "imgSrc": "./projects/learntofly3/learn-to-fly-3.png",
     "title": "Learn To Fly 3"
   },
   {
-    "link": "/projects/mario/",
-    "imgSrc": "/projects/mario/gaming-super-mario-bros-3.avif",
+    "link": "./projects/mario/",
+    "imgSrc": "./projects/mario/gaming-super-mario-bros-3.avif",
     "title": "Mario"
   },
   {
-    "link": "/projects/mariokart64/",
-    "imgSrc": "/projects/mariokart64/Screenshot 2026-01-19 181509.png",
+    "link": "./projects/mariokart64/",
+    "imgSrc": "./projects/mariokart64/Screenshot 2026-01-19 181509.png",
     "title": "Mario kart 64"
   },
   {
-    "link": "/projects/madalinstuntcars/",
-    "imgSrc": "/projects/madalinstuntcars/msc.png",
+    "link": "./projects/madalinstuntcars/",
+    "imgSrc": "./projects/madalinstuntcars/msc.png",
     "title": "Madalin stunt cars 2"
   },
   {
-    "link": "/projects/matrixrampage/",
-    "imgSrc": "/projects/matrixrampage/matrixrampage.jpg",
+    "link": "./projects/matrixrampage/",
+    "imgSrc": "./projects/matrixrampage/matrixrampage.jpg",
     "title": "Matrix Rampage"
   },
   {
-    "link": "/projects/melonplayground/",
-    "imgSrc": "/projects/melonplayground/melonplayground.png",
+    "link": "./projects/melonplayground/",
+    "imgSrc": "./projects/melonplayground/melonplayground.png",
     "title": "Melon playground"
   },
   {
-    "link": "/projects/meme2048/",
-    "imgSrc": "/projects/meme2048/img/rickroll.gif",
+    "link": "./projects/meme2048/",
+    "imgSrc": "./projects/meme2048/img/rickroll.gif",
     "title": "Meme 2048"
   },
   {
-    "link": "/projects/minecraft/",
-    "imgSrc": "/projects/minecraft/splash.jpeg",
+    "link": "./projects/minecraft/",
+    "imgSrc": "./projects/minecraft/splash.jpeg",
     "title": "Eaglercraft"
   },
  
    {
-    "link": "/projects/minecraft-classic/",
-    "imgSrc": "/projects/minecraft-classic/pack.png",
+    "link": "./projects/minecraft-classic/",
+    "imgSrc": "./projects/minecraft-classic/pack.png",
     "title": "Minecraft Classic"
   }, 
   {
-    "link": "/projects/minecraft-sp/",
-    "imgSrc": "/projects/minecraft-sp/pack.png",
+    "link": "./projects/minecraft-sp/",
+    "imgSrc": "./projects/minecraft-sp/pack.png",
     "title": "Minecraft singleplayer"
   },
   {
-    "link": "/projects/minesweeper/",
-    "imgSrc": "/projects/minesweeper/img/minesweeper.png",
+    "link": "./projects/minesweeper/",
+    "imgSrc": "./projects/minesweeper/img/minesweeper.png",
     "title": "Minesweeper"
   },
   {
-    "link": "/projects/miniputt/",
-    "imgSrc": "/projects/miniputt/miniputt.png",
+    "link": "./projects/miniputt/",
+    "imgSrc": "./projects/miniputt/miniputt.png",
     "title": "Mini-putt"
   },
   {
-    "link": "/projects/missiles/",
-    "imgSrc": "/projects/missiles/miss.png",
+    "link": "./projects/missiles/",
+    "imgSrc": "./projects/missiles/miss.png",
     "title": "Missiles"
   },
   {
-    "link": "/projects/monkeymart/",
-    "imgSrc": "/projects/monkeymart/monkey-mart-f180x180.png",
+    "link": "./projects/monkeymart/",
+    "imgSrc": "./projects/monkeymart/monkey-mart-f180x180.png",
     "title": "Monkey mart"
   },
   {
-    "link": "/projects/motox3m/",
-    "imgSrc": "/projects/motox3m/splash.jpg",
+    "link": "./projects/motox3m/",
+    "imgSrc": "./projects/motox3m/splash.jpg",
     "title": "MotoX3M"
   },
   {
-    "link": "/projects/motox3m-pool/",
-    "imgSrc": "/projects/motox3m-pool/splash.jpg",
+    "link": "./projects/motox3m-pool/",
+    "imgSrc": "./projects/motox3m-pool/splash.jpg",
     "title": "MotoX3M Pool"
   },
   {
-    "link": "/projects/motox3m-spooky/",
-    "imgSrc": "/projects/motox3m-spooky/splash.jpeg",
+    "link": "./projects/motox3m-spooky/",
+    "imgSrc": "./projects/motox3m-spooky/splash.jpeg",
     "title": "MotoX3M Spooky"
   },
   {
-    "link": "/projects/motox3m-winter/",
-    "imgSrc": "/projects/motox3m-winter/download.jpeg",
+    "link": "./projects/motox3m-winter/",
+    "imgSrc": "./projects/motox3m-winter/download.jpeg",
     "title": "MotoX3M Winter"
   },
    {
-    "link": "/projects/mousehero/",
-    "imgSrc": "/projects/mousehero/Mouse_Hero-title.png",
+    "link": "./projects/mousehero/",
+    "imgSrc": "./projects/mousehero/Mouse_Hero-title.png",
     "title": "Mouse Hero (NES)"
   },
   {
-    "link": "/projects/mrracer/",
-    "imgSrc": "/projects/mrracer/mrracer.png",
+    "link": "./projects/mrracer/",
+    "imgSrc": "./projects/mrracer/mrracer.png",
     "title": "Mr Racer"
   },
   {
-    "link": "/projects/n-gon/",
-    "imgSrc": "/projects/n-gon/bot.png",
+    "link": "./projects/n-gon/",
+    "imgSrc": "./projects/n-gon/bot.png",
     "title": "n-gon"
   },
   {
-    "link": "/projects/ns-shaft/",
-    "imgSrc": "/projects/ns-shaft/favicon.png",
+    "link": "./projects/ns-shaft/",
+    "imgSrc": "./projects/ns-shaft/favicon.png",
     "title": "NS-Shaft"
   },
    {
-    "link": "/projects/obbycart/",
-    "imgSrc": "/projects/obbycart/images.jpg",
+    "link": "./projects/obbycart/",
+    "imgSrc": "./projects/obbycart/images.jpg",
     "title": "Obby in a minecart"
   },
   {
-    "link": "/projects/om-bounce/",
-    "imgSrc": "/projects/om-bounce/assets/icon.jpeg",
+    "link": "./projects/om-bounce/",
+    "imgSrc": "./projects/om-bounce/assets/icon.jpeg",
     "title": "Om Nom Bounce"
   },
   {
-    "link": "/projects/pacman/clpacman.html",
-    "imgSrc": "/projects/pacman/Pac-Man.webp",
+    "link": "./projects/pacman/clpacman.html",
+    "imgSrc": "./projects/pacman/Pac-Man.webp",
     "title": "Pac-man (NES)"
   },
   {
-    "link": "/projects/pandemic2/",
-    "imgSrc": "/projects/pandemic2/pandemic2.png",
+    "link": "./projects/pandemic2/",
+    "imgSrc": "./projects/pandemic2/pandemic2.png",
     "title": "Pandemic 2"
   },
   {
-    "link": "/projects/papaspizzaria/",
-    "imgSrc": "/projects/papaspizzaria/papaspizzaria.jpg",
+    "link": "./projects/papaspizzaria/",
+    "imgSrc": "./projects/papaspizzaria/papaspizzaria.jpg",
     "title": "Papa's Pizzaria"
   },
   {
-    "link": "/projects/paperio2/",
-    "imgSrc": "/projects/paperio2/images/icon512.png",
+    "link": "./projects/paperio2/",
+    "imgSrc": "./projects/paperio2/images/icon512.png",
     "title": "Paper.io 2"
   },
   {
-    "link": "/projects/papery-planes/",
-    "imgSrc": "/projects/papery-planes/splash.jpg",
+    "link": "./projects/papery-planes/",
+    "imgSrc": "./projects/papery-planes/splash.jpg",
     "title": "Papery Planes"
   },
   {
-    "link": "/projects/particle-clicker/",
-    "imgSrc": "/projects/particle-clicker/assets/mobile/original.png",
+    "link": "./projects/particle-clicker/",
+    "imgSrc": "./projects/particle-clicker/assets/mobile/original.png",
     "title": "Particle Clicker"
   },
    {
-    "link": "/projects/peopleplayground/",
-    "imgSrc": "/projects/peopleplayground/images.png",
+    "link": "./projects/peopleplayground/",
+    "imgSrc": "./projects/peopleplayground/images.png",
     "title": "People Playground"
   },
   {
-    "link": "/projects/polybranch/",
-    "imgSrc": "/projects/polybranch/img/pic1.png",
+    "link": "./projects/polybranch/",
+    "imgSrc": "./projects/polybranch/img/pic1.png",
     "title": "PolyBranch"
   },
   {
-    "link": "/projects/polytrack/",
-    "imgSrc": "/projects/polytrack/PolyTrack.png",
+    "link": "./projects/polytrack/",
+    "imgSrc": "./projects/polytrack/PolyTrack.png",
     "title": "Poly Track"
   },
   {
-    "link": "/projects/portalflash/",
-    "imgSrc": "/projects/portalflash/portaltheflashversion.jpg",
+    "link": "./projects/portalflash/",
+    "imgSrc": "./projects/portalflash/portaltheflashversion.jpg",
     "title": "Portal (Flash)"
   },
   {
-    "link": "/projects/precision-client/",
-    "imgSrc": "/projects/precision-client/logo.png",
+    "link": "./projects/precision-client/",
+    "imgSrc": "./projects/precision-client/logo.png",
     "title": "Precision Client (Eaglercraft)"
   },
   {
-    "link": "/projects/push-the-square/",
-    "imgSrc": "/projects/push-the-square/img/splash.png",
+    "link": "./projects/push-the-square/",
+    "imgSrc": "./projects/push-the-square/img/splash.png",
     "title": "Push The Square"
   },
   {
-    "link": "/projects/push-your-luck/",
-    "imgSrc": "/projects/push-your-luck/assets/img/push.png",
+    "link": "./projects/push-your-luck/",
+    "imgSrc": "./projects/push-your-luck/assets/img/push.png",
     "title": "Push Your Luck"
   },
    {
-    "link": "/projects/racemaster-3d/",
-    "imgSrc": "/projects/racemaster-3d/logo.jpg",
+    "link": "./projects/racemaster-3d/",
+    "imgSrc": "./projects/racemaster-3d/logo.jpg",
     "title": "Race Master 3D"
   },
   {
-    "link": "/projects/rubikscube/",
-    "imgSrc": "/projects/rubikscube/rubiks.png",
+    "link": "./projects/rubikscube/",
+    "imgSrc": "./projects/rubikscube/rubiks.png",
     "title": "Rubiks Cube online"
   },
  {
-    "link": "/projects/rallypoint5/",
-    "imgSrc": "/projects/rallypoint5/rp5.jpg",
+    "link": "./projects/rallypoint5/",
+    "imgSrc": "./projects/rallypoint5/rp5.jpg",
     "title": "Rally point 5"
   },
   {
-    "link": "/projects/retro-bowl/",
-    "imgSrc": "/projects/retro-bowl/img/icon.jpg",
+    "link": "./projects/retro-bowl/",
+    "imgSrc": "./projects/retro-bowl/img/icon.jpg",
     "title": "Retro Bowl"
   },
   {
-    "link": "/projects/rocketsoccer/",
-    "imgSrc": "/projects/rocketsoccer/rsd.png",
+    "link": "./projects/rocketsoccer/",
+    "imgSrc": "./projects/rocketsoccer/rsd.png",
     "title": "Rocket Soccer 3D"
   },
   {
-    "link": "/projects/rolly-vortex/",
-    "imgSrc": "/projects/rolly-vortex/icon-256.png",
+    "link": "./projects/rolly-vortex/",
+    "imgSrc": "./projects/rolly-vortex/icon-256.png",
     "title": "Rolly Vortex"
   },
   {
-    "link": "/projects/roll3d/",
-    "imgSrc": "/projects/roll3d/roll3d.png",
+    "link": "./projects/roll3d/",
+    "imgSrc": "./projects/roll3d/roll3d.png",
     "title": "Rolling ball 3d"
   },
   {
-    "link": "/projects/rooftop-snipers/",
-    "imgSrc": "/projects/rooftop-snipers/img/preview.png",
+    "link": "./projects/rooftop-snipers/",
+    "imgSrc": "./projects/rooftop-snipers/img/preview.png",
     "title": "Rooftop Snipers"
   },
   {
-    "link": "/projects/run3/",
-    "imgSrc": "/projects/run3/run3.jpg",
+    "link": "./projects/run3/",
+    "imgSrc": "./projects/run3/run3.jpg",
     "title": "Run 3"
   },
   {
-    "link": "/projects/sand-game/",
-    "imgSrc": "/projects/sand-game/sand.png",
+    "link": "./projects/sand-game/",
+    "imgSrc": "./projects/sand-game/sand.png",
     "title": "Sand Game"
   },
    {
-    "link": "/projects/shellshockers/",
-    "imgSrc": "/projects/shellshockers/shellshock.jpg",
+    "link": "./projects/shellshockers/",
+    "imgSrc": "./projects/shellshockers/shellshock.jpg",
     "title": "Shell Shockers"
   },
   {
-    "link": "/projects/shredsauce/",
-    "imgSrc": "/projects/shredsauce/shredsauce.png",
+    "link": "./projects/shredsauce/",
+    "imgSrc": "./projects/shredsauce/shredsauce.png",
     "title": "Shredsauce"
   },
   {
-    "link": "/projects/slope/",
-    "imgSrc": "/projects/slope/slope4.jpeg",
+    "link": "./projects/slope/",
+    "imgSrc": "./projects/slope/slope4.jpeg",
     "title": "Slope"
   },
   {
-    "link": "/projects/slowroads/",
-    "imgSrc": "/projects/slowroads/header.jpg",
+    "link": "./projects/slowroads/",
+    "imgSrc": "./projects/slowroads/header.jpg",
     "title": "Slow roads"
   },
   {
-    "link": "/projects/snowrider3d/",
-    "imgSrc": "/projects/snowrider3d/sn3d.png",
+    "link": "./projects/snowrider3d/",
+    "imgSrc": "./projects/snowrider3d/sn3d.png",
     "title": "Snow rider 3D"
   },
    {
-    "link": "/projects/squarerace/",
-    "imgSrc": "/projects/squarerace/squarerace.png",
+    "link": "./projects/squarerace/",
+    "imgSrc": "./projects/squarerace/squarerace.png",
     "title": "Square Race: Arcade Edition"
   },
   {
-    "link": "/projects/sm64/",
-    "imgSrc": "/projects/sm64/logo.png",
+    "link": "./projects/sm64/",
+    "imgSrc": "./projects/sm64/logo.png",
     "title": "Super Mario 64"
   },
   {
-    "link": "/projects/smokingbarrels/",
-    "imgSrc": "/projects/smokingbarrels/smokingbarrels.jpg",
+    "link": "./projects/smokingbarrels/",
+    "imgSrc": "./projects/smokingbarrels/smokingbarrels.jpg",
     "title": "Smoking Barrels"
   },
   {
-    "link": "/projects/snowbattle/",
-    "imgSrc": "/projects/snowbattle/img/logo.png",
+    "link": "./projects/snowbattle/",
+    "imgSrc": "./projects/snowbattle/img/logo.png",
     "title": "Snowbattle"
   },
   {
-    "link": "/projects/soldier-legend/",
-    "imgSrc": "/projects/soldier-legend/images/splash.jpeg",
+    "link": "./projects/soldier-legend/",
+    "imgSrc": "./projects/soldier-legend/images/splash.jpeg",
     "title": "Soilder Legend"
   },
   {
-    "link": "/projects/solitaire/",
-    "imgSrc": "/projects/solitaire/screen-shot.png",
+    "link": "./projects/solitaire/",
+    "imgSrc": "./projects/solitaire/screen-shot.png",
     "title": "Solitare"
   },
   {
-    "link": "/projects/sort-the-court/",
-    "imgSrc": "/projects/sort-the-court/img/splash.png",
+    "link": "./projects/sort-the-court/",
+    "imgSrc": "./projects/sort-the-court/img/splash.png",
     "title": "Sort The Court"
   },
   {
-    "link": "/projects/soundboard/",
-    "imgSrc": "/projects/soundboard/img/mlg-favicon.png",
+    "link": "./projects/soundboard/",
+    "imgSrc": "./projects/soundboard/img/mlg-favicon.png",
     "title": "Soundboard"
   },
   {
-    "link": "/projects/stack/",
-    "imgSrc": "/projects/stack/stack.png",
+    "link": "./projects/stack/",
+    "imgSrc": "./projects/stack/stack.png",
     "title": "Stack"
   },
   {
-    "link": "/projects/stack-bump-3d/",
-    "imgSrc": "/projects/stack-bump-3d/thumbnail.jpg",
+    "link": "./projects/stack-bump-3d/",
+    "imgSrc": "./projects/stack-bump-3d/thumbnail.jpg",
     "title": "Stack Bump 3D"
   },
   {
-    "link": "/projects/stealingthediamond/",
-    "imgSrc": "/projects/stealingthediamond/stealingthediamond.jpg",
+    "link": "./projects/stealingthediamond/",
+    "imgSrc": "./projects/stealingthediamond/stealingthediamond.jpg",
     "title": "Stealing The Diamond"
   },
   {
-    "link": "/projects/stickwar/",
-    "imgSrc": "/projects/stickwar/stickwar.jpg",
+    "link": "./projects/stickwar/",
+    "imgSrc": "./projects/stickwar/stickwar.jpg",
     "title": "Stick War"
   },
   {
-    "link": "/projects/stormthehouse2/",
-    "imgSrc": "/projects/stormthehouse2/stormthehouse2.jpg",
+    "link": "./projects/stormthehouse2/",
+    "imgSrc": "./projects/stormthehouse2/stormthehouse2.jpg",
     "title": "Storm The House 2"
   },
   {
-    "link": "/projects/superhot/",
-    "imgSrc": "/projects/superhot/hot.jpg",
+    "link": "./projects/superhot/",
+    "imgSrc": "./projects/superhot/hot.jpg",
     "title": "Superhot"
   },
   {
-    "link": "/projects/swerve/",
-    "imgSrc": "/projects/swerve/img/favicon.jpg",
+    "link": "./projects/swerve/",
+    "imgSrc": "./projects/swerve/img/favicon.jpg",
     "title": "Swerve"
   },
   {
-    "link": "/projects/tacticalassasin2/",
-    "imgSrc": "/projects/tacticalassasin2/tacticalassassin2.png",
+    "link": "./projects/tacticalassasin2/",
+    "imgSrc": "./projects/tacticalassasin2/tacticalassassin2.png",
     "title": "Tactical Assassin 2"
   },
   {
-    "link": "/projects/tank-trouble-2/",
-    "imgSrc": "/projects/tank-trouble-2/tank.jpeg",
+    "link": "./projects/tank-trouble-2/",
+    "imgSrc": "./projects/tank-trouble-2/tank.jpeg",
     "title": "Tank Trouble 2"
   },
   {
-    "link": "/projects/tanuki-sunset/",
-    "imgSrc": "/projects/tanuki-sunset/img/cover.png",
+    "link": "./projects/tanuki-sunset/",
+    "imgSrc": "./projects/tanuki-sunset/img/cover.png",
     "title": "Tanuki Sunset"
   },
   {
-    "link": "/projects/temple-run-2/",
-    "imgSrc": "/projects/temple-run-2/img/og-icon.png",
+    "link": "./projects/temple-run-2/",
+    "imgSrc": "./projects/temple-run-2/img/og-icon.png",
     "title": "Temple Run 2"
   },
   {
-    "link": "/projects/territorial/",
-    "imgSrc": "/projects/territorial/territorial.png",
+    "link": "./projects/territorial/",
+    "imgSrc": "./projects/territorial/territorial.png",
     "title": "Territorial.io"
   },
   {
-    "link": "/projects/tetris/cltetris.html",
-    "imgSrc": "/projects/tetris/Tetris.png",
+    "link": "./projects/tetris/cltetris.html",
+    "imgSrc": "./projects/tetris/Tetris.png",
     "title": "Tetris (NES)"
   },
   {
-    "link": "/projects/thebattle/",
-    "imgSrc": "/projects/thebattle/thebattle.png",
+    "link": "./projects/thebattle/",
+    "imgSrc": "./projects/thebattle/thebattle.png",
     "title": "The Battle"
   },
   {
-    "link": "/projects/the-final-earth/",
-    "imgSrc": "/projects/the-final-earth/images.png",
+    "link": "./projects/the-final-earth/",
+    "imgSrc": "./projects/the-final-earth/images.png",
     "title": "The Final Earth"
   },
   {
-    "link": "/projects/theheist/",
-    "imgSrc": "/projects/theheist/theheist.jpg",
+    "link": "./projects/theheist/",
+    "imgSrc": "./projects/theheist/theheist.jpg",
     "title": "The Heist"
   },
   {
-    "link": "/projects/there-is-no-game/",
-    "imgSrc": "/projects/there-is-no-game/logo.png",
+    "link": "./projects/there-is-no-game/",
+    "imgSrc": "./projects/there-is-no-game/logo.png",
     "title": "There Is No Game"
   },
   {
-    "link": "/projects/tinyfishing/",
-    "imgSrc": "/projects/tinyfishing/tinyfishing.png",
+    "link": "./projects/tinyfishing/",
+    "imgSrc": "./projects/tinyfishing/tinyfishing.png",
     "title": "Tiny fishing"
   },
   {
-    "link": "/projects/thisistheonlylevel/",
-    "imgSrc": "/projects/thisistheonlylevel/thisistheonlylevel.png",
+    "link": "./projects/thisistheonlylevel/",
+    "imgSrc": "./projects/thisistheonlylevel/thisistheonlylevel.png",
     "title": "This Is The Only Level"
   },
    {
-    "link": "/projects/thirtydollar/",
-    "imgSrc": "/projects/thirtydollar/Screenshot 2026-03-01 182328.png",
+    "link": "./projects/thirtydollar/",
+    "imgSrc": "./projects/thirtydollar/Screenshot 2026-03-01 182328.png",
     "title": "Thirty dollar website"
   },
   {
-    "link": "/projects/tombofthemask/",
-    "imgSrc": "/projects/tombofthemask/totm.png",
+    "link": "./projects/tombofthemask/",
+    "imgSrc": "./projects/tombofthemask/totm.png",
     "title": "Tomb of the mask"
   },
    {
-    "link": "/projects/tomodachi/",
-    "imgSrc": "/projects/tomodachi/tomodachi.webp",
+    "link": "./projects/tomodachi/",
+    "imgSrc": "./projects/tomodachi/tomodachi.webp",
     "title": "Tomodachi Collection"
   },
   {
-    "link": "/projects/topspeedracing/",
-    "imgSrc": "/projects/topspeedracing/top-speed-3d.jpg",
+    "link": "./projects/topspeedracing/",
+    "imgSrc": "./projects/topspeedracing/top-speed-3d.jpg",
     "title": "Top speed racing 3d"
   },
   {
-    "link": "/projects/tosstheturtle/",
-    "imgSrc": "/projects/tosstheturtle/tosstheturtle.png",
+    "link": "./projects/tosstheturtle/",
+    "imgSrc": "./projects/tosstheturtle/tosstheturtle.png",
     "title": "Toss The Turtle"
   },
   {
-    "link": "/projects/tube-jumpers/",
-    "imgSrc": "/projects/tube-jumpers/img/shark.jpg",
+    "link": "./projects/tube-jumpers/",
+    "imgSrc": "./projects/tube-jumpers/img/shark.jpg",
     "title": "Tube Jumpers"
   },
    {
-    "link": "/projects/tungobby/",
-    "imgSrc": "/projects/tungobby/tts.jpeg",
+    "link": "./projects/tungobby/",
+    "imgSrc": "./projects/tungobby/tts.jpeg",
     "title": "Tung Tung Sahur Obby"
   },
   {
-    "link": "/projects/tunnel-rush/",
-    "imgSrc": "/projects/tunnel-rush/img/tunnel.jpg",
+    "link": "./projects/tunnel-rush/",
+    "imgSrc": "./projects/tunnel-rush/img/tunnel.jpg",
     "title": "Tunnel Rush"
   },
   {
-    "link": "/projects/tv-static/",
-    "imgSrc": "/projects/tv-static/static.png",
+    "link": "./projects/tv-static/",
+    "imgSrc": "./projects/tv-static/static.png",
     "title": "TV Static"
   },
    {
-    "link": "/projects/ultrakill/",
-    "imgSrc": "/projects/ultrakill/download.jpg",
+    "link": "./projects/ultrakill/",
+    "imgSrc": "./projects/ultrakill/download.jpg",
     "title": "Ultrakill (buggy)"
   },
   {
-    "link": "/projects/vex3/",
-    "imgSrc": "/projects/vex3/vex3.png",
+    "link": "./projects/vex3/",
+    "imgSrc": "./projects/vex3/vex3.png",
     "title": "Vex 3"
   },
   {
-    "link": "/projects/vex4/",
-    "imgSrc": "/projects/vex4/vex4.png",
+    "link": "./projects/vex4/",
+    "imgSrc": "./projects/vex4/vex4.png",
     "title": "Vex 4"
   },
   {
-    "link": "/projects/vex5/",
-    "imgSrc": "/projects/vex5/vex.jpeg",
+    "link": "./projects/vex5/",
+    "imgSrc": "./projects/vex5/vex.jpeg",
     "title": "Vex 5"
   },
   {
-    "link": "/projects/vex6/",
-    "imgSrc": "/projects/vex6/assets/icon.jpeg",
+    "link": "./projects/vex6/",
+    "imgSrc": "./projects/vex6/assets/icon.jpeg",
     "title": "Vex 6"
   },
   {
-    "link": "/projects/webretro-local/",
-    "imgSrc": "/projects/webretro-local/assets/icon204.png",
+    "link": "./projects/webretro-local/",
+    "imgSrc": "./projects/webretro-local/assets/icon204.png",
     "title": "Web Retro Local"
   },
   {
-    "link": "/projects/wbwwb/",
-    "imgSrc": "/projects/wbwwb/wbwwb.webp",
+    "link": "./projects/wbwwb/",
+    "imgSrc": "./projects/wbwwb/wbwwb.webp",
     "title": "We Become what we Behold"
   },
   {
-    "link": "/projects/winxp/",
-    "imgSrc": "/projects/winxp/bliss.jpg",
+    "link": "./projects/winxp/",
+    "imgSrc": "./projects/winxp/bliss.jpg",
     "title": "Windows XP simulator (fanmade)"
   },
   {
-    "link": "/projects/wolf3d/",
-    "imgSrc": "/projects/wolf3d/art/wolf3d.png",
+    "link": "./projects/wolf3d/",
+    "imgSrc": "./projects/wolf3d/art/wolf3d.png",
     "title": "Wolfenstein 3D"
   },
   {
-    "link": "/projects/wordle/",
-    "imgSrc": "/projects/wordle/img/logo_512x512.png",
+    "link": "./projects/wordle/",
+    "imgSrc": "./projects/wordle/img/logo_512x512.png",
     "title": "Wordle"
   },
   {
-    "link": "/projects/worlds-hardest-game/",
-    "imgSrc": "/projects/worlds-hardest-game/images/splash.jpg",
+    "link": "./projects/worlds-hardest-game/",
+    "imgSrc": "./projects/worlds-hardest-game/images/splash.jpg",
     "title": "World's Hardest Game"
   },
   {
-    "link": "/projects/worlds-hardest-game-2/",
-    "imgSrc": "/projects/worlds-hardest-game-2/the-worlds-hardest-game-2.jpg",
+    "link": "./projects/worlds-hardest-game-2/",
+    "imgSrc": "./projects/worlds-hardest-game-2/the-worlds-hardest-game-2.jpg",
     "title": "World's Hardest Game 2"
   },
   {
-    "link": "/projects/yellow/",
-    "imgSrc": "/projects/yellow/yeller.png",
+    "link": "./projects/yellow/",
+    "imgSrc": "./projects/yellow/yeller.png",
     "title": "Yellow"
   }
 ]
