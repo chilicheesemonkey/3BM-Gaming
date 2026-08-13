@@ -210,10 +210,10 @@ function search(query) {
             url = 'https://' + url;
         }
         // Redirect to the Nexus embed page with the URL
-        window.location.href = `/web/#${url}`;
+        window.location.href = `./web/#${url}`;
     } else {
         // Redirect to the Nexus embed page with a Google search
-        window.location.href = `/web/#${searchEngine}${encodeURIComponent(query)}`;
+        window.location.href = `./web/#${searchEngine}${encodeURIComponent(query)}`;
     }
 }
 
