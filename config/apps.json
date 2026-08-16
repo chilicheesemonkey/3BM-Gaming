@@ -69,8 +69,7 @@
     "link": "web/index.html#https://chatgpt.com",
     "imgSrc": "projects/chatgpt/images.png",
     "title": "ChatGPT"
-  },
-   
+  },   
    {
     "link": "web/index.html#https://github.com",
     "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/960px-Octicons-mark-github.svg.png?20180806170715",
@@ -85,11 +84,6 @@
     "link": "web/index.html#https://y8.com",
     "imgSrc": "./apps/IMG_4052.png",
     "title": "Y8 Games"
-  },
-   {
-    "link": "/apps/ti84/",
-    "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Calculator_%28iOS_26%29_app_icon.png",
-    "title": "Graphing Calculator"
   },
   {
     "link": "web/index.html#https://play.fancade.com",
