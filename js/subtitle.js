@@ -75,7 +75,7 @@ function getRandomGreeting() {
     "This is the 5th time this week, and it's only Monday",
     "You bum",
     "Wad ass hair reveal?? what are you, SICK??",
-    "hamgurber."
+    "hamgurber.",
     "Designed for your browser, built for your break.",
     "Drift Boss is pretty fun",
     "plurg :D",
